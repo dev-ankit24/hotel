@@ -49,10 +49,10 @@ export default function Navbar() {
                                 <NavLink to="/service" className="nav-item nav-link">Services</NavLink>
                                 <NavLink to="/room" className="nav-item nav-link">Rooms</NavLink>
                                 <div className="nav-item dropdown">
-                                    <NavLink to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</NavLink>
+                                    <NavLink to="" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</NavLink>
                                     <div className="dropdown-menu rounded-0 m-0">
                                         <NavLink to="/booking" className="dropdown-item">Booking</NavLink>
-                                        <NavLink to="/team" className="dropdown-item">Our Team</NavLink>
+                                        {/* <NavLink to="/team" className="dropdown-item">Our Team</NavLink> */}
                                         {/* <NavLink to="/testimonial" className="dropdown-item">Testimonial</NavLink> */}
                                     </div>
                                 </div>

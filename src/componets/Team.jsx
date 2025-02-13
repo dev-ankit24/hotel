@@ -7,7 +7,7 @@ export default function Team() {
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="section-title text-center text-primary text-uppercase">Our Customer</h6>
-                    <h1 class="mb-5">Customer  <span class="text-primary text-uppercase"> Testimonials</span></h1>
+                    <h1 class="mb-5">Customer  <span class="text-primary "> Testimonials</span></h1>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -61,7 +61,7 @@ export default function Team() {
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="rounded shadow overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="img/cus4.jpg" alt=""/>
+                                <img class="img-fluid" src="img/cus41.jpg" alt=""/>
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>

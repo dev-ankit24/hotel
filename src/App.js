@@ -11,6 +11,7 @@ import BookingPage from "./componets/BookingPage";
 import TeamPage from "./componets/TeamPage";
 import TestimonialPage from "./componets/TestimonialPage";
 import ContactUsPage from "./componets/ContactUsPage";
+import Error404 from "./componets/Error404";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
         <Route path="/team" element={<TeamPage/>}/>
         <Route path="/testimonial" element={<TestimonialPage/>}/>
         <Route path="/contact" element={<ContactUsPage/>}/>
+        <Route path="/*" element={<Error404/>}/>
+
     </Routes>
     <Footer/>
   </BrowserRouter>

@@ -8,7 +8,7 @@ export default function Slider() {
             <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="w-100" src="img/banner.jpg" alt="Image"/>
+                        <img class="w-100" src="img/ban1.png" alt="Image"/>
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style={{maxWidth: "700px"}}>
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
@@ -19,7 +19,7 @@ export default function Slider() {
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="w-100" src="img/banner.png" alt="Image"/>
+                        <img class="w-100" src="img/ban2.png" alt="Image"/>
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style={{maxWidth: "700px"}}>
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
@@ -30,7 +30,7 @@ export default function Slider() {
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="w-100" src="img/banner1.png" alt="Image"/>
+                        <img class="w-100" src="img/ban3.png" alt="Image"/>
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style={{maxWidth: "700px"}}>
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
