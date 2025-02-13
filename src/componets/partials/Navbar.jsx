@@ -1,6 +1,9 @@
 import React from 'react'
 import {NavLink} from "react-router-dom"
 export default function Navbar() {
+    const alert1 =()=>{
+        alert(" Sorry !! Login Not Allow ")
+    }
   return (
     <>
     <div className="container-fluid bg-dark px-0">
@@ -55,7 +58,7 @@ export default function Navbar() {
                                 </div>
                                 <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
                             </div>
-                               <button className='btn btn-primary login mx-5' >login</button>
+                               <button className='btn btn-primary login mx-5' onClick={alert1} >login</button>
                             {/* <a href="https://htmlcodex.com/hotel-html-template-pro" className="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Premium Version<i className="fa fa-arrow-right ms-3"></i></a> */}
                         </div>
                     </nav>
