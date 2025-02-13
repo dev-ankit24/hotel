@@ -18,7 +18,7 @@ export default function Home() {
     <Room/>
     <Brand/>
     <Services/>
-    <Testimonials/>
+    {/* <Testimonials/> */}
     <Team/>
     <Subscribe/>
     </>
