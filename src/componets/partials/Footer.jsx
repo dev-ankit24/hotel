@@ -19,9 +19,9 @@ export default function Footer() {
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Pehlad Market, Karol Bagh, Delhi </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9971522879</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@perfectconsultancy.co</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>

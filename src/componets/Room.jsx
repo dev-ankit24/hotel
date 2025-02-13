@@ -14,8 +14,8 @@ export default function Room() {
                 <div className="row g-4">
                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div className="room-item shadow rounded overflow-hidden">
-                            <div className="position-relative">
-                                <img className="img-fluid" src="img/room-1.jpg" alt=""/>
+                            <div className="position-relative" height={"110px"}>
+                                <img className="img-fluid" src="img/room-15.jpg" height={"110px"} width={"100%"} alt=""/>
                                 <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
                             </div>
                             <div className="p-4 mt-2">
@@ -44,8 +44,8 @@ export default function Room() {
                     </div>
                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div className="room-item shadow rounded overflow-hidden">
-                            <div className="position-relative">
-                                <img className="img-fluid" src="img/room-2.jpg" alt=""/>
+                            <div className="position-relative"  >
+                                <img className="img-fluid" src="img/room-12.jpg"    width={"100%"} alt=""/>
                                 <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
                             </div>
                             <div className="p-4 mt-2">
@@ -74,8 +74,8 @@ export default function Room() {
                     </div>
                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                         <div className="room-item shadow rounded overflow-hidden">
-                            <div className="position-relative">
-                                <img className="img-fluid" src="img/room-3.jpg" alt=""/>
+                            <div className="position-relative" >
+                                <img className="img-fluid" src="img/room-14.avif"  alt=""/>
                                 <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
                             </div>
                             <div className="p-4 mt-2">
