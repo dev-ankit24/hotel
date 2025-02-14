@@ -31,7 +31,7 @@ export default function RoomPage() {
                         <div className="room-item shadow rounded overflow-hidden">
                             <div className="position-relative">
                                 <img className="img-fluid" src="img/room-12.jpg" alt=""/>
-                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 1190/Night</small>
                             </div>
                             <div className="p-4 mt-2">
                                 <div className="d-flex justify-content-between mb-3">
@@ -61,7 +61,7 @@ export default function RoomPage() {
                         <div className="room-item shadow rounded overflow-hidden">
                             <div className="position-relative">
                                 <img className="img-fluid" src="img/room-2.jpg" alt=""/>
-                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 1178/Night</small>
                             </div>
                             <div className="p-4 mt-2">
                                 <div className="d-flex justify-content-between mb-3">
@@ -91,7 +91,7 @@ export default function RoomPage() {
                         <div className="room-item shadow rounded overflow-hidden">
                             <div className="position-relative">
                                 <img className="img-fluid" src="img/room-3.jpg" alt=""/>
-                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 2759/Night</small>
                             </div>
                             <div className="p-4 mt-2">
                                 <div className="d-flex justify-content-between mb-3">
