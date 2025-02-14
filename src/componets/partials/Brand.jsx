@@ -17,7 +17,7 @@ export default function Brand() {
                 </div>
                 <div class="col-md-6">
                     <div class="video">
-                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://youtube.com/shorts/-WIOJbXTBOg?si=GJhKMTSI-JZQb-ve" data-bs-target="#videoModal">
                             <span></span>
                         </button>
                     </div>
@@ -35,8 +35,8 @@ export default function Brand() {
                     <div class="modal-body">
                         {/* <!-- 16:9 aspect ratio --> */}
                         <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                                allow="autoplay"></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/od7fAeHvi2U?si=AouIO7XwdV5-uw6K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  id="video" allowfullscreen allowscriptaccess="always"
+                               ></iframe>
                         </div>
                     </div>
                 </div>

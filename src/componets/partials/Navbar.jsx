@@ -18,11 +18,11 @@ export default function Navbar() {
                         <div className="col-lg-7 px-5 text-start">
                             <div className="h-100 d-inline-flex align-items-center py-2 me-4">
                                 <i className="fa fa-envelope text-primary me-2"></i>
-                                <p className="mb-0">info@example.com</p>
+                                <p className="mb-0">info@perfectconsultancy.co</p>
                             </div>
                             <div className="h-100 d-inline-flex align-items-center py-2">
                                 <i className="fa fa-phone-alt text-primary me-2"></i>
-                                <p className="mb-0">+012 345 6789</p>
+                                <p className="mb-0">+91 9971522879</p>
                             </div>
                         </div>
                         <div className="col-lg-5 px-5 text-end">
@@ -44,12 +44,12 @@ export default function Navbar() {
                         </button>
                         <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div className="navbar-nav mr-auto py-0">
-                                <NavLink to=" " className="nav-item nav-link active">Home</NavLink>
+                                <NavLink to="/" className="nav-item nav-link active">Home</NavLink>
                                 <NavLink to="/about" className="nav-item nav-link">About</NavLink>
                                 <NavLink to="/service" className="nav-item nav-link">Services</NavLink>
                                 <NavLink to="/room" className="nav-item nav-link">Rooms</NavLink>
                                 <div className="nav-item dropdown">
-                                    <NavLink to="" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</NavLink>
+                                    <NavLink to="page" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</NavLink>
                                     <div className="dropdown-menu rounded-0 m-0">
                                         <NavLink to="/booking" className="dropdown-item">Booking</NavLink>
                                         {/* <NavLink to="/team" className="dropdown-item">Our Team</NavLink> */}
