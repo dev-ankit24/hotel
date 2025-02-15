@@ -25,13 +25,16 @@ export default function RoomPage() {
         {/* <!-- Page Header End --> */}
         <Booking/>
         <Room/>
-        <div className="container">
-        <div className="row g-4">
+        <div className="container-xxl py-5">
+             <div className="container">
+             <div className="row g-4">
                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div className="room-item shadow rounded overflow-hidden">
                             <div className="position-relative">
                                 <img className="img-fluid" src="img/room-12.jpg" alt=""/>
                                 <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 1190/Night</small>
+                                <img className="img-fluid  room-img" src="img/low3.jpg" alt=""/>
+                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
                             </div>
                             <div className="p-4 mt-2">
                                 <div className="d-flex justify-content-between mb-3">
@@ -62,6 +65,8 @@ export default function RoomPage() {
                             <div className="position-relative">
                                 <img className="img-fluid" src="img/room-2.jpg" alt=""/>
                                 <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 1178/Night</small>
+                                <img className="img-fluid room-img" src="img/low.jpg" alt=""/>
+                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
                             </div>
                             <div className="p-4 mt-2">
                                 <div className="d-flex justify-content-between mb-3">
@@ -92,6 +97,8 @@ export default function RoomPage() {
                             <div className="position-relative">
                                 <img className="img-fluid" src="img/room-3.jpg" alt=""/>
                                 <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 2759/Night</small>
+                                <img className="img-fluid room-img" src="img/low5.jpg" alt=""/>
+                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
                             </div>
                             <div className="p-4 mt-2">
                                 <div className="d-flex justify-content-between mb-3">
@@ -118,6 +125,7 @@ export default function RoomPage() {
                         </div>
                     </div>
                 </div>
+             </div>
         </div>
 
         <Testimonials/>

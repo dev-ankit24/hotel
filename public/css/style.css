@@ -1,9 +1,10 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FEA116;
-    /* --primary: #F4D35E; */
+    /* --primary: #FEA116; */
+    --primary: #b99365;
     --light: #F1F8FF;
-    --dark: #0F172B;
+    /* --dark: #0F172B; */
+    --dark: #353535;
     
 }
 
@@ -21,8 +22,22 @@
     }
 }
 .login:hover{
-    background: #996210;
+    /* background: #996210; */
+    background: #cca772;
+
 }
+
+.brand-img{
+ height: 500px;
+ width: 100%;
+}
+.room-img{
+    height: 250px;
+    width: 100%;
+}
+
+
+
 .fw-medium {
     font-weight: 500 !important;
 }
@@ -137,8 +152,18 @@
     width: 3rem;
     height: 3rem;
 }
-
+@media (max-width: 580px) {
+    .brand-btn{
+        /* margin-top: 5px; */
+        display: flex;
+    }
+.brand-img, .video{
+    height: 300px;
+    width: 100%;
+   }
+}
 @media (max-width: 768px) {
+
     #header-carousel .carousel-item {
         position: relative;
         min-height: 450px;
@@ -249,6 +274,7 @@
     position: relative;
     height: 100%;
     min-height: 300px;
+    /* min-height: 500px; */
     background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(../img/video.jpg);
     background-position: center center;
     background-repeat: no-repeat;

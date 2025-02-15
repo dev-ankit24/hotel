@@ -13,17 +13,17 @@ export default function Brand() {
                         <p class="text-white mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                         <Link to="/room"  class="btn btn-primary py-md-3 px-md-5 me-3 brand-btn">Our Rooms</Link>
                         <Link to="/booking" class="btn btn-light py-md-3 px-md-5">Book A Room</Link>
+                        <div className='brand-btn'>
+                        <Link to="/room" href="" class="btn btn-primary py-md-3 px-md-5 me-3">Our Rooms</Link>
+                        <Link to="/booking" class="btn btn-light brand-btn py-md-3 px-md-5">Book A Room</Link>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
 
                     <div class="video">
-                        {/* <button type="button" class="btn-play" data-bs-toggle="modal"  data-bs-target="#videoModal">
-                            <span></span>
-                             */}
-                            <img src="./img/brand.png" className='brand-img' alt="" width={"100%"}  height={"100%"}/>
-                            {/* </button> */}
-                        </div>
+                    <img src="img/band.png" className='brand-img'   alt="" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -32,14 +32,17 @@ export default function Brand() {
             <div class="modal-dialog">
                 <div class="modal-content rounded-0">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    
                     </div>
                     <div class="modal-body">
                         <!-- 16:9 aspect ratio -->
                         <div class="ratio ratio-16x9">
+<<<<<<< HEAD
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/od7fAeHvi2U?si=AouIO7XwdV5-uw6K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  id="video" allowfullscreen allowscriptaccess="always"
                                ></iframe>
+=======
+                           
+>>>>>>> f826fb7 (frist)
                         </div>
                     </div>
                 </div>
