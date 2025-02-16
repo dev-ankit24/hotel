@@ -7,7 +7,6 @@ import Services from './Services'
 export default function ServicesPage() {
   return (
     <>
-    {/* <!-- Page Header Start --> */}
         <div className="container-fluid page-header mb-5 p-0" style={{backgroundImage: "url(img/ban3.png)"}}>
             <div className="container-fluid page-header-inner py-5">
                 <div className="container text-center pb-5">
@@ -22,7 +21,6 @@ export default function ServicesPage() {
                 </div>
             </div>
         </div>
-        {/* <!-- Page Header End --> */}
         <Booking/>
         <Services/>
         <Testimonials/>
