@@ -54,7 +54,7 @@ export default function About() {
                                 <img className="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="img/room-13.jpg"/>
                             </div>
                             <div className="col-6 text-start">
-                                <img className="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/room-15.jpg"/>
+                                <img className="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/room-14.avif"/>
                             </div>
                         </div>
                     </div>

@@ -22,8 +22,6 @@ export default function BookingPage() {
         </div>
         {/* <!-- Page Header End --> */}
         <Booking/>
-
-        {/* <!-- Booking Start --> */}
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -45,6 +43,7 @@ export default function BookingPage() {
                             <div class="col-6 text-start">
                                 <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/room-16.jpg"/>
                             </div>
+                           
                         </div>
                     </div>
                     <div class="col-lg-6">
