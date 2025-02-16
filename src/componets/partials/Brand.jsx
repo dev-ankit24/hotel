@@ -37,12 +37,7 @@ export default function Brand() {
                     <div class="modal-body">
                         <!-- 16:9 aspect ratio -->
                         <div class="ratio ratio-16x9">
-<<<<<<< HEAD
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/od7fAeHvi2U?si=AouIO7XwdV5-uw6K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  id="video" allowfullscreen allowscriptaccess="always"
-                               ></iframe>
-=======
                            
->>>>>>> f826fb7 (frist)
                         </div>
                     </div>
                 </div>
