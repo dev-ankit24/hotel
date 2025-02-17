@@ -11,6 +11,9 @@
 
 /* brand  */
 @media only screen and (max-width: 600px){
+    .login{
+        margin-left: -5px;
+    }
     .brand-btn{
         margin-bottom : 5px;
     }
@@ -20,6 +23,9 @@
     .brand-img{
         height: 100%;
     }
+}
+.login{
+    margin-right:100px;
 }
 .login:hover{
     /* background: #996210; */
