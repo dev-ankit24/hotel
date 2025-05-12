@@ -1,6 +1,8 @@
 import React from 'react'
 import Booking from './partials/Booking'
-
+import { MdEmail } from "react-icons/md";
+import { IoLocationSharp } from "react-icons/io5";
+import { FaPhoneAlt } from "react-icons/fa";
 export default function ContactUsPage() {
   return (
     <>
@@ -20,7 +22,7 @@ export default function ContactUsPage() {
             </div>
         </div>
         {/* <!-- Page Header End --> */}
-        <Booking/>
+        {/* <Booking/> */}
         {/* <!-- Contact Start --> */}
         <div class="container-xxl py-5">
             <div class="container">
@@ -32,22 +34,30 @@ export default function ContactUsPage() {
                     <div class="col-12">
                         <div class="row gy-4">
                             <div class="col-md-4">
-                                <h6 class="section-title text-start text-primary text-uppercase">Booking</h6>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>book@example.com</p>
+                                <h6 class="section-title text-start text-primary text-uppercase">Phone</h6>
+                                <p><FaPhoneAlt  className='text-dark fs-5 me-2'/>
+                                 <a href="tel:+919899145516">+91 9899145516 </a>,
+                                 <a href="tel:+91011-43466861">011-43466861</a>
+                                </p>
                             </div>
                             <div class="col-md-4">
-                                <h6 class="section-title text-start text-primary text-uppercase">General</h6>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>
+                                <h6 class="section-title text-start text-primary text-uppercase">Email</h6>
+                                <p> <MdEmail  className='text-dark fs-5 me-2'/>
+                                <a href="mailto:tomarhospitality@gmail.com">tomarhospitality@gmail.com</a>
+                                </p>
                             </div>
                             <div class="col-md-4">
-                                <h6 class="section-title text-start text-primary text-uppercase">Technical</h6>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
+                                <h6 class="section-title text-start text-primary text-uppercase">Address</h6>
+                                <p><IoLocationSharp className='text-dark fs-5 me-2' />
+                                <a href="https://www.google.com/maps/place/Conference+Halls+in+Delhi+-+Tomar+Hospitality/@28.6449278,77.189695,20z/data=!4m6!3m5!1s0x390d029f3f257f9d:0xf56901a212d914e4!8m2!3d28.6449761!4d77.1897419!16s%2Fg%2F11j8k958nd?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target='_blank'> 17A/2, W.E.A. Karol Bagh, New Delhi, 110005</a>
+                                
+                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
                         <iframe class="position-relative rounded w-100 h-100"
-                            src="https://www.google.com/maps/embed/v1/place?q=A-1,+frist+floor+,+pehlad+market+,+karol+bagh+new+delhi&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                            src="https://maps.google.com/maps?q=Conference+Halls+in+Delhi+-+Tomar+Hospitality++17A%2C+Block+7%2C+Block+8A%2C+WEA%2C+Karol+Bagh%2C+New+Delhi%2C+Delhi%2C+110005&output=embed"
                             frameborder="0" style={{minHeight: "350px", border:"0"}} allowfullscreen="" aria-hidden="false"
                             tabindex="0"></iframe>
                     </div>

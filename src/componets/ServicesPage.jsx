@@ -1,6 +1,4 @@
 import React from 'react'
-import Booking from './partials/Booking'
-import Subscribe from './partials/Subscribe'
 import Testimonials from './partials/Testimonials'
 import Services from './Services'
 
@@ -10,7 +8,7 @@ export default function ServicesPage() {
         <div className="container-fluid page-header mb-5 p-0" style={{backgroundImage: "url(img/ban3.png)"}}>
             <div className="container-fluid page-header-inner py-5">
                 <div className="container text-center pb-5">
-                    <h1 className="display-3 text-white mb-3 animated slideInDown">Services</h1>
+                    <h1 className="display-3 text-white mb-3 animated slideInDown">Hotel</h1>
                     <nav aria-label="breadcrumb">
                         <ol className="breadcrumb justify-content-center text-uppercase">
                             <li className="breadcrumb-item"><a href="#">Home</a></li>
@@ -21,10 +19,10 @@ export default function ServicesPage() {
                 </div>
             </div>
         </div>
-        <Booking/>
+        {/* <Booking/> */}
         <Services/>
-        <Testimonials/>
-        <Subscribe/>
+        {/* <Testimonials/> */}
+        {/* <Subscribe/> */}
     </>
   )
 }

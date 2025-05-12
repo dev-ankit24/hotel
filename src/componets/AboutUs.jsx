@@ -1,7 +1,6 @@
 import React from 'react'
 import About from './partials/About'
-import Booking from './partials/Booking'
-import Subscribe from './partials/Subscribe'
+
 import Team from './Team'
 
 export default function AboutUs() {
@@ -21,10 +20,10 @@ export default function AboutUs() {
                 </div>
             </div>
         </div>
-        <Booking/>
+        {/* <Booking/> */}
         <About/>
         <Team/>
-        <Subscribe/>
+        {/* <Subscribe/> */}
     </>
   )
 }

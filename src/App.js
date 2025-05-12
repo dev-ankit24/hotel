@@ -21,7 +21,7 @@ function App() {
    {/* <Slider/> */}
    {/* <Home/> */}
     <Routes>
-        <Route path="" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<AboutUs/>}/>
         <Route path="/service" element={<ServicesPage/>}/>
         <Route path="/room" element={<RoomPage/>}/>

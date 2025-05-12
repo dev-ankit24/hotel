@@ -8,18 +8,18 @@ export default function Slider() {
             <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="w-100" src="img/ban1.png" alt="Image"/>
+                        <img class="w-100" src="/img/room/super.jpg" alt="Room Image for Tomer Hospitality"/>
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style={{maxWidth: "700px"}}>
-                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
-                                <h1 class="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Hotel</h1>
-                                <Link to="/room" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</Link>
+                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Meeting Room</h6>
+                                <h1 class="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Meeting Room</h1>
+                                <Link to="/room" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Meeting Room</Link>
                                 <Link to="/booking" href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</Link>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="w-100" src="img/ban2.png" alt="Image"/>
+                        <img class="w-100" src="/img/room/classic1.jpg" alt="Room Image for Tomer Hospitality"/>
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style={{maxWidth: "700px"}}>
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
@@ -30,7 +30,7 @@ export default function Slider() {
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="w-100" src="img/ban3.png" alt="Image"/>
+                        <img class="w-100" src="/img/room/deluxe.jpg" alt="Room Image for Tomer Hospitality"/>
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style={{maxWidth: "700px"}}>
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>

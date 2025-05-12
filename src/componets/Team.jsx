@@ -28,6 +28,7 @@ export default function Team() {
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
                                 {/* <small>Designation</small> */}
+                                <p>"Lorem ipsum dolor sit amet, molestias repudiandae id quasi sed non a. Omnis, hic repudiandae velit id voluptatum ab illo expedita culpa magnam".</p>
                             </div>
                         </div>
                     </div>
@@ -48,6 +49,8 @@ export default function Team() {
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-half text-warning"></i>
                                 {/* <small>Designation</small> */}
+                                <p>"Lorem ipsum dolor sit amet, molestias repudiandae id quasi sed non a. Omnis, hic repudiandae velit id voluptatum ab illo expedita culpa magnam".</p>
+
                             </div>
                         </div>
                     </div>
@@ -69,6 +72,8 @@ export default function Team() {
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-half text-warning"></i>
                                 {/* <small>Designation</small> */}
+                                <p>"Lorem ipsum dolor sit amet, molestias repudiandae id quasi sed non a. Omnis, hic repudiandae velit id voluptatum ab illo expedita culpa magnam".</p>
+
                             </div>
                         </div>
                     </div>
@@ -90,6 +95,8 @@ export default function Team() {
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-half text-warning"></i>
                                 {/* <small>Designation</small> */}
+                                <p>"Lorem ipsum dolor sit amet, molestias repudiandae id quasi sed non a. Omnis, hic repudiandae velit id voluptatum ab illo expedita culpa magnam".</p>
+
                             </div>
                         </div>
                     </div>
