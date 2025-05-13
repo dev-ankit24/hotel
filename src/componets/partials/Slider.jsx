@@ -8,7 +8,7 @@ export default function Slider() {
             <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="w-100" src="/img/room/super.jpg" alt="Room Image for Tomer Hospitality"/>
+                        <img class="w-100" src="/img/Home/slider/classic-slider.jpg" alt="Room Image for Tomer Hospitality"/>
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style={{maxWidth: "700px"}}>
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Meeting Room</h6>
@@ -19,7 +19,7 @@ export default function Slider() {
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="w-100" src="/img/room/classic1.jpg" alt="Room Image for Tomer Hospitality"/>
+                        <img class="w-100" src="/img/Home/slider/deluxe-slider.jpg" alt="Room Image for Tomer Hospitality"/>
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style={{maxWidth: "700px"}}>
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
@@ -30,7 +30,7 @@ export default function Slider() {
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="w-100" src="/img/room/deluxe.jpg" alt="Room Image for Tomer Hospitality"/>
+                        <img class="w-100" src="/img/Home/slider/super-slider.jpg" alt="Room Image for Tomer Hospitality"/>
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style={{maxWidth: "700px"}}>
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>

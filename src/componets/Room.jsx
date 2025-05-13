@@ -24,7 +24,7 @@ export default function Room() {
                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div className="room-item shadow rounded overflow-hidden">
                             <div className="position-relative" height={"110px"}>
-                                <img className="img-fluid" src="/img/room1.jpg" height={"110px"} width={"100%"} alt=""/>
+                                <img className="img-fluid" src="/img/room/classic/classic1.jpg" height={"110px"} width={"100%"} alt=""/>
                                 <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 1010/Night</small>
                             </div>
                             <div className="p-4 mt-2">
@@ -54,7 +54,7 @@ export default function Room() {
                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div className="room-item shadow rounded overflow-hidden">
                             <div className="position-relative"  >
-                                <img className="img-fluid" src="/img/room/room5.jpg"    width={"100%"} alt=""/>
+                                <img className="img-fluid" src="/img/room/deluxe/deluxe4.jpg"    width={"100%"} alt=""/>
                                 <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 1158/Night</small>
                             </div>
                             <div className="p-4 mt-2">
@@ -84,7 +84,7 @@ export default function Room() {
                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                         <div className="room-item shadow rounded overflow-hidden">
                             <div className="position-relative" >
-                                <img className="img-fluid" src="/img/room/room4.jpg"  alt=""/>
+                                <img className="img-fluid" src="/img/room/super/super-room3.jpg"  alt=""/>
                                 <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 1521/Night</small>
                             </div>
                             <div className="p-4 mt-2">
@@ -132,17 +132,21 @@ export default function Room() {
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/img/room/room5.jpg" class="d-block w-100" alt="super deluxe room image"/>
+      <img src="/img/room/super/super-room1.jpg" class="d-block w-100" alt="super deluxe room image"/>
     </div>
     <div class="carousel-item">
-      <img src="/img/room/room4.jpg" class="d-block w-100" alt="super deluxe room image slider"/>
+      <img src="/img/room/super/super-room2.jpg" class="d-block w-100" alt="super deluxe room image slider"/>
     </div>
     <div class="carousel-item">
-      <img src="/img/room/room3.jpg" class="d-block w-100" alt="super deluxe room slider"/>
+      <img src="/img/room/super/super-room3.jpg" class="d-block w-100" alt="super deluxe room slider"/>
     </div>
     <div class="carousel-item">
-      <img src="/img/room/room4.jpg" class="d-block w-100" alt="super deluxe room slider"/>
+      <img src="/img/room/super/super-room4.jpg" class="d-block w-100" alt="super deluxe room slider"/>
     </div>
+    <div class="carousel-item">
+      <img src="/img/room/super/washrrom.jpg" class="d-block w-100" alt="super deluxe room slider"/>
+    </div>
+    
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -188,16 +192,16 @@ export default function Room() {
        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/img/room/room5.jpg" class="d-block w-100" alt="super deluxe room image"/>
+      <img src="/img/room/deluxe/deluxe1.jpg" class="d-block w-100" alt="super deluxe room image"/>
     </div>
     <div class="carousel-item">
-      <img src="/img/room/room4.jpg" class="d-block w-100" alt="super deluxe room image slider"/>
+      <img src="/img/room/deluxe/deluxe2.jpg" class="d-block w-100" alt="super deluxe room image slider"/>
     </div>
     <div class="carousel-item">
-      <img src="/img/room/room3.jpg" class="d-block w-100" alt="super deluxe room slider"/>
+      <img src="/img/room/deluxe/deluxe3.jpg" class="d-block w-100" alt="super deluxe room slider"/>
     </div>
     <div class="carousel-item">
-      <img src="/img/room/room4.jpg" class="d-block w-100" alt="super deluxe room slider"/>
+      <img src="/img/room/deluxe/deluxe-washroom.jpg" class="d-block w-100" alt="super deluxe room slider"/>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -239,13 +243,16 @@ export default function Room() {
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/img/room/room5.jpg" class="d-block w-100" alt="..."/>
+      <img src="/img/room/classic/classic1.jpg" class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
-      <img src="/img/room/room4.jpg" class="d-block w-100" alt="..2."/>
+      <img src="/img/room/classic/classic2.jpg" class="d-block w-100" alt="..2."/>
     </div>
     <div class="carousel-item">
-      <img src="/img/room/room3.jpg" class="d-block w-100" alt="3..."/>
+      <img src="/img/room/classic/classic3.jpg" class="d-block w-100" alt="3..."/>
+    </div>
+     <div class="carousel-item">
+      <img src="/img/room/classic/classic-washroom.jpg" class="d-block w-100" alt="3..."/>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">

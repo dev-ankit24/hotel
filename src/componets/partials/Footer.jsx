@@ -56,7 +56,7 @@ export default function Footer() {
                             <h6 className="section-title text-start text-primary text-uppercase mb-4">Services</h6>
                             <Link to="/" className="btn btn-link" >Home</Link>
                             <Link to="/about" className="btn btn-link" >About</Link>
-                            <Link to="/hotel" className="btn btn-link" >Hotel</Link>
+                            <Link to="/room" className="btn btn-link" >Room</Link>
                             <Link to="/gallery" className="btn btn-link" >Gallery</Link>
                             <Link to="/contact" className="btn btn-link" >Contact Us</Link>
                         </div>

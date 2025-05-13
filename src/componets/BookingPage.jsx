@@ -11,11 +11,11 @@ export default function BookingPage() {
                 <div class="container text-center pb-5">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Booking</h1>
                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
+                        {/* <ol class="breadcrumb justify-content-center text-uppercase">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
                             <li class="breadcrumb-item"><a href="#">Pages</a></li>
                             <li class="breadcrumb-item text-white active" aria-current="page">Booking</li>
-                        </ol>
+                        </ol> */}
                     </nav>
                 </div>
             </div>
@@ -31,17 +31,17 @@ export default function BookingPage() {
                 <div class="row g-5">
                     <div class="col-lg-6">
                         <div class="row g-3">
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/room-11.jpg" style={{marginTop: "25%"}}/>
+                             <div className="col-6 text-end">
+                                <img className="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="/img/room/classic/classic1.jpg" style={{marginTop: "25%"}}/>
                             </div>
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/room-12.jpg"/>
+                            <div className="col-6 text-start">
+                                <img className="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="/img/room/deluxe/deluxe3.jpg"/>
                             </div>
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="img/room-13.jpg"/>
+                            <div className="col-6 text-end">
+                                <img className="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="/img/room/super/Super-room4.jpg"/>
                             </div>
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/room-16.jpg"/>
+                            <div className="col-6 text-start">
+                                <img className="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="/img/room/all-room/room7.webp"/>
                             </div>
                            
                         </div>

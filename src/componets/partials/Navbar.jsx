@@ -1,11 +1,16 @@
-import React, { useEffect } from 'react';
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
-    const alert1 = () => {
-        alert("Sorry !! Login Not Allow");
-    };
 
+      const [dropdownOpen, setDropdownOpen] = useState(false);
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+    const alert1 = () => {
+        navigate("/room")
+    };
+ let navigate = useNavigate()
     useEffect(() => {
         const handleResize = () => {
             const isDesktop = window.innerWidth >= 992;
@@ -63,11 +68,10 @@ export default function Navbar() {
                             </div>
                             <div className="col-lg-5 px-5 text-end">
                                 <div className="d-inline-flex align-items-center py-2">
-                                    <a className="me-3" href="#"><i className="fab fa-facebook-f"></i></a>
-                                    <a className="me-3" href="#"><i className="fab fa-twitter"></i></a>
-                                    <a className="me-3" href="#"><i className="fab fa-linkedin-in"></i></a>
-                                    <a className="me-3" href="#"><i className="fab fa-instagram"></i></a>
-                                    <a className="" href="#"><i className="fab fa-youtube"></i></a>
+                                    <a className="me-3" href="https://www.facebook.com/tomarhospitality" target='_blank'><i className="fab fa-facebook-f"></i></a>
+                                    <a className="me-3"   href="https://x.com/TomarConference" target='_blank'><i className="fab fa-twitter"></i></a>
+                                    <a className="me-3"href="https://www.instagram.com/tomarhospitality/" target='_blank'><i className="fab fa-instagram"></i></a>
+                                    <a className="" href="https://www.youtube.com/channel/UC_FGfQHKHQZGlDCFFGAtiUw" target='_blank'><i className="fab fa-youtube"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -86,16 +90,26 @@ export default function Navbar() {
                                     <NavLink to="/" className="nav-item nav-link active">Home</NavLink>
                                     <NavLink to="/about" className="nav-item nav-link">About</NavLink>
 
-                                    <div className="nav-item dropdown">
-                                        <NavLink to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hotel</NavLink>
-                                        <div className="dropdown-menu rounded-0 m-0">
-                                            <NavLink to="/service" className="dropdown-item ">Hotel SPB-87</NavLink>
-                                            <NavLink to="/service1" className="dropdown-item">Hotel Siam International</NavLink>
-                                            
-                                        </div>
-                                    </div>
+                                   <div className="nav-item dropdown">
+      <span
+        className="nav-item nav-link text-light"
+        onClick={toggleDropdown}
+        style={{ cursor: "pointer" }}
+      >
+        Hotel
+      </span>
+      <div className={`dropdown-menu rounded-0 m-0 ${dropdownOpen ? "show" : ""}`}>
+        <NavLink to="/hotel-spb-87" className="dropdown-item" onClick={() => setDropdownOpen(false)}>
+          Hotel SPB-87
+        </NavLink>
+        <NavLink to="/hotel-amrit-villa" className="dropdown-item" onClick={() => setDropdownOpen(false)}>
+          Hotel Amrit Villa
+        </NavLink>
+      </div>
+    </div>
 
                                     <NavLink to="/room" className="nav-item nav-link">Rooms</NavLink>
+                                    <NavLink to="/gallery" className="nav-item nav-link">Gallery</NavLink>
                                     <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
                                 </div>
                                 <button className='btn btn-primary login' onClick={alert1}>Book Now</button>

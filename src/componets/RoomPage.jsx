@@ -13,19 +13,19 @@ export default function RoomPage() {
                 <div className="container text-center pb-5">
                     <h1 className="display-3 text-white mb-3 animated slideInDown">Rooms</h1>
                     <nav aria-label="breadcrumb">
-                        <ol className="breadcrumb justify-content-center text-uppercase">
+                        {/* <ol className="breadcrumb justify-content-center text-uppercase">
                             <li className="breadcrumb-item"><a href="#">Home</a></li>
                             <li className="breadcrumb-item"><a href="#">Pages</a></li>
                             <li className="breadcrumb-item text-white active" aria-current="page">Rooms</li>
-                        </ol>
+                        </ol> */}
                     </nav>
                 </div>
             </div>
         </div>
         {/* <!-- Page Header End --> */}
-        <Booking/>
+        {/* <Booking/> */}
         <Room/>
-        <div className="container-xxl py-5">
+        {/* <div className="container-xxl py-5">
              <div className="container">
              <div className="row g-4">
                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -121,10 +121,10 @@ export default function RoomPage() {
                     </div>
                 </div>
              </div>
-        </div>
+        </div> */}
 
         <Testimonials/>
-        <Subscribe/>
+        {/* <Subscribe/> */}
 
     </>
   )

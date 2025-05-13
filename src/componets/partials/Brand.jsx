@@ -21,7 +21,7 @@ export default function Brand() {
                 <div class="col-md-6">
 
                     <div class="video">
-                    <img src="img/brand.png" className='brand-img'   alt="" />
+                    <img src="/img/Home/slider/multi-frame.png" className='brand-img'   alt="" />
                     </div>
                 </div>
             </div>
