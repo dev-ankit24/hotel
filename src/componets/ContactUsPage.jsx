@@ -1,9 +1,71 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Booking from './partials/Booking'
 import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
+import Formvalidators from './validation/Formvalidators';
+import toast from 'react-hot-toast';
 export default function ContactUsPage() {
+ let [data, setData]= useState({
+    name:"",
+    email:"",
+    phone:"",
+    message:""
+ })
+let [show, setShow]= useState(false)
+ let [errorMessage, setErrorMessage]= useState({
+    name:"Name Field Is Requied ",
+    email:"Email Address Field Is Required",
+    phone:"Phone Field Is Required",
+    message:"Subject Field Is Required"
+ })
+
+
+ function getInputData(e){
+     let {name, value}= e.target;
+   if(name==="name"|| name==="email"|| name==="phone"|| name==="message"){
+    setErrorMessage((x)=>{
+        return{
+            ...x,
+            [name]:Formvalidators(e)
+        }
+    })
+   }
+   setData((x)=>{
+    return{
+        ...x,
+        [name]:value
+    }
+   })
+
+ }
+
+ const postData =(async(e)=>{
+    e.preventDefault()
+      let error = Object.values(errorMessage).find((x)=>x.length>0)
+      if(error){
+        setShow(true)
+      }
+      else{
+         let res = await fetch("http://localhost:5000/api/contact",{
+            method:"POST",
+            headers:{
+                "content-type":"application/json"
+            },
+            body: JSON.stringify({...data})
+         })
+         res = await res.json()
+         if(res.result==="Done"){
+            toast.success("Message send SuccessFully")
+            window.location.reload()
+         }
+         else{
+            console.log(error, "Error Data Not Found");
+            
+         }
+      }
+ })
+
   return (
     <>
     {/* <!-- Page Header Start --> */}
@@ -63,30 +125,34 @@ export default function ContactUsPage() {
                     </div>
                     <div class="col-md-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <form>
+                            <form onSubmit={postData}>
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name"/>
-                                            <label for="name">Your Name</label>
+                                            <input type="text"  onChange={getInputData} name="name" class="form-control" id="name" placeholder="Your Name"/>
+                                            <label for="name">Your Name*</label>
+                                            {show && errorMessage?<p className='text-danger'>{errorMessage.name}</p>:""}
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email"/>
-                                            <label for="email">Your Email</label>
+                                            <input type="email" onChange={getInputData}  name='email' class="form-control" id="email" placeholder="Your Email"/>
+                                            <label for="email">Your Email*</label>
+                                            {show && errorMessage?<p className='text-danger'>{errorMessage.email}</p>:""}
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject"/>
-                                            <label for="subject">Subject</label>
+                                            <input type="number" onChange={getInputData}  name='phone' class="form-control" id="subject" placeholder="Subject"/>
+                                            <label for="subject">Phone*</label>
+                                            {show && errorMessage?<p className='text-danger'>{errorMessage.phone}</p>:""}
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style={{height: "150px"}}></textarea>
-                                            <label for="message">Message</label>
+                                            <textarea class="form-control" onChange={getInputData}  name='message' placeholder="Leave a message here" id="message" style={{height: "150px"}}></textarea>
+                                            <label for="message">Subject*</label>
+                                            {show && errorMessage?<p className='text-danger'>{errorMessage.message}</p>:""}
                                         </div>
                                     </div>
                                     <div class="col-12">

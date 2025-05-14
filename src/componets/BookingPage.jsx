@@ -1,8 +1,91 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Booking from './partials/Booking'
 import Subscribe from './partials/Subscribe'
-
+import toast from 'react-hot-toast';
+import Formvalidators from './validation/Formvalidators';
 export default function BookingPage() {
+    let [data, setData]= useState({
+        name:"",
+        phone:"",
+        email:"",
+        checkIn:"",
+        checkOut:"",
+        adult:"",
+        child:"",
+        room:"",
+        message:""
+    })
+    let [show, setShow] = useState(false)
+    let [errorMessage, setErrorMessage]= useState({
+        name:"Name Field is Required",
+        phone:"Phone Field Is Required",
+        email:"Email Field Is Required",
+        checkIn:"CheckIn Field Is Required",
+        checkOut:"ChekOut Field Is Required ",
+        adult:"Adult Field Is Required",
+        child:"Child Field Is Required",
+        room :"Room Field Is Required",
+        message:"Message Field Is Required"
+    })
+
+    function getInputData(e){
+        let{value,name}= e.target;
+        if(name==="name"||name==="phone"||name==="email"||name==="checkIn"|| name==="checkOut"||name==="adult"||name==="child"|| name==="room"||name==="message"){
+            setErrorMessage((x)=>{
+                return{
+                    ...x,
+                    [name]:Formvalidators(e)
+                }
+            })
+        }
+        setData((x)=>{
+            return{
+                ...x,
+                [name]:value
+            }
+        })
+        console.log(data);
+        
+    }
+async function postData(e) {
+  e.preventDefault();
+
+  let error = Object.values(errorMessage).find((x) => x.length > 0);
+  console.log(error);
+
+  if (error) {
+    setShow(true);
+    console.log(error);
+  } else {
+    console.log("Sending request...");
+
+    try {
+      let res = await fetch("http://localhost:5000/api/roomquery", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", // ✅ Fixed here
+        },
+        body: JSON.stringify({ ...data }),
+      });
+
+      res = await res.json();
+      console.log(res);
+
+      if (res.result === "Done") {
+        toast.success("Room Booked Successfully");
+        window.location.reload();
+      } else {
+        console.log("Error: Record not Found");
+      }
+    } catch (err) {
+      console.error("Fetch failed:", err);
+    }
+  }
+}
+
+
+
+
   return (
     <>
     {/* <!-- Page Header Start --> */}
@@ -48,66 +131,73 @@ export default function BookingPage() {
                     </div>
                     <div class="col-lg-6">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <form>
+                            <form onSubmit={postData}>
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name"/>
-                                            <label for="name">Your Name</label>
+                                            <input type="text" onChange={(getInputData)} name='name' class="form-control" id="name" placeholder="Your Name"/>
+                                            <label for="name">Your Name*</label>
+                                            {show && errorMessage ?<p className='text-danger'>{errorMessage.name}</p>:""}
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email"/>
-                                            <label for="email">Your Email</label>
+                                            <input type="number" onChange={(getInputData)} name='phone' class="form-control" id="email" placeholder="Your Email"/>
+                                            <label for="email">Your Phone*</label>
+                                            {show && errorMessage ?<p className='text-danger'>{errorMessage.phone   }</p>:""}
+                                        </div>
+                                    </div>
+                                     <div class="col-md-12">
+                                        <div class="form-floating">
+                                            <input type="email" onChange={(getInputData)} name='email' class="form-control" id="email" placeholder="Your Email"/>
+                                            <label for="email">Your Email*</label>
+                                            {show && errorMessage ?<p className='text-danger'>{errorMessage.email   }</p>:""}
+
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating date" id="date3" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" id="checkin" placeholder="Check In" data-target="#date3" data-toggle="datetimepicker" />
-                                            <label for="checkin">Check In</label>
+                                            <input type="date" className='form-control' name='checkIn' onChange={getInputData} />
+                                            <label for="checkin">Check In*</label>
+                                            {show && errorMessage ?<p className='text-danger'>{errorMessage.checkIn   }</p>:""}
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating date" id="date4" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" id="checkout" placeholder="Check Out" data-target="#date4" data-toggle="datetimepicker" />
-                                            <label for="checkout">Check Out</label>
+                                            <input type="date" className='form-control' name='checkOut' onChange={getInputData} />
+                                            <label for="checkout">Check Out*</label>
+                                            {show && errorMessage ?<p className='text-danger'>{errorMessage.checkOut}</p>:""}
+
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <select class="form-select" id="select1">
-                                              <option value="1">Adult 1</option>
-                                              <option value="2">Adult 2</option>
-                                              <option value="3">Adult 3</option>
-                                            </select>
-                                            <label for="select1">Select Adult</label>
+                                            <input type="number" onChange={(getInputData)} name='adult' class="form-control datetimepicker-input" />
+                                            <label for="select1">Enter Adult*</label>
+                                            {show && errorMessage ?<p className='text-danger'>{errorMessage.adult   }</p>:""}
+
                                           </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <select class="form-select" id="select2">
-                                              <option value="1">Child 1</option>
-                                              <option value="2">Child 2</option>
-                                              <option value="3">Child 3</option>
-                                            </select>
-                                            <label for="select2">Select Child</label>
+                                            <input type="number" onChange={(getInputData)} name='child' class="form-control datetimepicker-input" />
+                                            <label for="select2">Enter Child*</label>
+                                            {show && errorMessage ?<p className='text-danger'>{errorMessage.child   }</p>:""}
+
                                           </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <select class="form-select" id="select3">
-                                              <option value="1">Room 1</option>
-                                              <option value="2">Room 2</option>
-                                              <option value="3">Room 3</option>
-                                            </select>
-                                            <label for="select3">Select A Room</label>
+                                            <input type="number" onChange={(getInputData)} name='room' class="form-control datetimepicker-input" />
+                                            <label for="select3">Enter A Room*</label>
+                                            {show && errorMessage ?<p className='text-danger'>{errorMessage.room}</p>:""}
                                           </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Special Request" id="message" style={{height: "100px"}}></textarea>
+                                            <textarea class="form-control" onChange={(getInputData)} name='message' placeholder="Special Request" id="message" style={{height: "100px"}}></textarea>
                                             <label for="message">Special Request</label>
+                                            {show && errorMessage ?<p className='text-danger'>{errorMessage.message   }</p>:""}
                                         </div>
                                     </div>
                                     <div class="col-12">

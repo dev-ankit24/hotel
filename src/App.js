@@ -15,7 +15,7 @@ import Gallery from "./componets/Gallery";
 import HotelSPB from "./componets/HotelSPB";
 import HotelAmritVilla from "./componets/HotelAmritVilla";
 import ScrollToTop from "./componets/partials/ScrollToTop";
-
+import  { Toaster } from 'react-hot-toast';
 function App() {
 
   
@@ -23,6 +23,8 @@ function App() {
     <>
   <BrowserRouter>
   <ScrollToTop/>
+      <Toaster position="top-right"
+  reverseOrder={false} />
    <Navbar/>
    {/* <Slider/> */}
    {/* <Home/> */}

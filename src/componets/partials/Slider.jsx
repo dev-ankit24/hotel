@@ -13,8 +13,8 @@ export default function Slider() {
                             <div class="p-3" style={{maxWidth: "700px"}}>
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Meeting Room</h6>
                                 <h1 class="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Meeting Room</h1>
-                                <Link to="/room" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Meeting Room</Link>
-                                <Link to="/booking" href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</Link>
+                                <Link to="/room" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Book Room</Link>
+                                {/* <Link to="/contact" href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</Link> */}
                             </div>
                         </div>
                     </div>
@@ -24,8 +24,9 @@ export default function Slider() {
                             <div class="p-3" style={{maxWidth: "700px"}}>
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
                                 <h1 class="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Hotel</h1>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
-                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
+                                <Link to="/room" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Book Room</Link>
+                                {/* <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a> */}
                             </div>
                         </div>
                     </div>
@@ -35,8 +36,9 @@ export default function Slider() {
                             <div class="p-3" style={{maxWidth: "700px"}}>
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
                                 <h1 class="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Hotel</h1>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
-                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
+                                <Link to="/room" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Book Room</Link>
+                                {/* <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
+                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a> */}
                             </div>
                         </div>
                     </div>
