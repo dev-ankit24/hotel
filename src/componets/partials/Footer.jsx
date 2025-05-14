@@ -44,14 +44,7 @@ export default function Footer() {
                 </div>
                 <div className="col-lg-5 col-md-12">
                     <div className="row gy-5 g-4">
-                        {/* <div className="col-md-6">
-                            <h6 className="section-title text-start text-primary text-uppercase mb-4">Company</h6>
-                            <a className="btn btn-link" href="">About Us</a>
-                            <a className="btn btn-link" href="">Contact Us</a>
-                            <a className="btn btn-link" href="">Privacy Policy</a>
-                            <a className="btn btn-link" href="">Terms & Condition</a>
-                            <a className="btn btn-link" href="">Support</a>
-                        </div> */}
+                       
                         <div className="col-md-6">
                             <h6 className="section-title text-start text-primary text-uppercase mb-4">Services</h6>
                             <Link to="/" className="btn btn-link" >Home</Link>
@@ -59,6 +52,13 @@ export default function Footer() {
                             <Link to="/room" className="btn btn-link" >Room</Link>
                             <Link to="/gallery" className="btn btn-link" >Gallery</Link>
                             <Link to="/contact" className="btn btn-link" >Contact Us</Link>
+                        </div>
+
+                        <div className="col-md-6">
+                           <iframe class="position-relative rounded w-105 h-50"
+                            src="https://maps.google.com/maps?q=Conference+Halls+in+Delhi+-+Tomar+Hospitality++17A%2C+Block+7%2C+Block+8A%2C+WEA%2C+Karol+Bagh%2C+New+Delhi%2C+Delhi%2C+110005&output=embed"
+                            frameborder="0" style={{minHeight: "350px", border:"0"}} allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
                         </div>
                     </div>
                 </div>
@@ -70,8 +70,6 @@ export default function Footer() {
                     <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         &copy;2025 Tomar Hospitality. All Right Reserved. Developed by <a href="https://www.perfectconsultancy.co/" target="_blank" rel="noopener noreferrer" className='text-primary' >PGC LLP</a> 
           
-          {/* Designed By <a className="border-bottom" href="https://htmlcodex.com">HTML Codex</a> */}
-                        {/* <br/>Distributed By: <a className="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a> */}
                     </div>
                     <div className="col-md-6 text-center text-md-end">
                         {/* <div className="footer-menu">
