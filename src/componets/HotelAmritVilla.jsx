@@ -85,7 +85,7 @@ export default function HotelAmritVilla() {
             </div>
         </div>
         <div id="carouselExample" className="carousel slide">
-  <div className="carousel-inner" style={{height:"550px"}}>
+  <div className="carousel-inner hotel-slider" >
     <div className="carousel-item active">
       <img src="/img/hotel-87/hotel-87.jpg" className="d-block w-100" alt="slider Hotel  "/>
     </div>
@@ -119,38 +119,37 @@ export default function HotelAmritVilla() {
           <p className="text-center">Please leave us your requirements here and we will get back to you. You may also call us at +91-9899145516</p>
         </div>
 
-        <div className="col-md-12 ">
+        <div className="col-md-12  ">
                       <div className="hotel-spb-form">
                             <h3 className="text-center">Query Form </h3>
                            <form onSubmit={postData}>
 
 
                   <div className="row">
-                     <div className="mb-3 col-md-4 col-sm-4 col-12 ">
-                         <label for="exampleInputEmail1" className="form-label">Name*</label>
-                         <input type="text" name="name" onChange={getInput} className={`form-control ${show && errorMessage.name ?"border-danger ":""}`} id="exampleInputEmail1" placeholder="Enter Your Full Name....." aria-describedby="emailHelp"/>
-                      {/* {show && errorMessage?<p className="text-danger">{errorMessage.name}</p>:""} */}
+                     <div className="mb-3 col-md-4 col-sm-4 col-12  hotel-input-row-div">
+                         <label for="exampleInputEmail1" className="form-label hotel-label ">Name*</label>
+                         <input type="text" name="name" onChange={getInput} className={`form-control ${show && errorMessage.name ?"border-danger ":""}`} id="exampleInputEmail1" placeholder="Enter Your Full Name....."/>
                        </div>
                        <div className="mb-3 col-md-4 col-sm-4 col-12">
-                         <label for="exampleInputPassword1" className="form-label">Email*</label>
+                         <label for="exampleInputPassword1" className="form-label hotel-label">Email*</label>
                          <input type="email"onChange={getInput} name="email" className={`form-control ${show && errorMessage.email ?"border-danger ":""}`} id="exampleInputPassword1" placeholder="Enter Your Email Address..... "/>
                        </div>
                        <div className="mb-3 col-md-4 col-sm-4 col-12">
-                         <label for="exampleInputPassword1" className="form-label">Phone*</label>
+                         <label for="exampleInputPassword1" className="form-label hotel-label">Phone*</label>
                          <input type="number"onChange={getInput}  name="phone" className={`form-control ${show && errorMessage.phone ?"border-danger ":""}`} id="exampleInputPassword1" placeholder="Enter Your Phone ....."/>
                        </div>
                   </div>
                   <div className="row">
                      <div className="mb-3 col-md-3 col-sm-4 col-12">
-                         <label for="exampleInputEmail1" className="form-label">Check In*</label>
-                         <input type="date" onChange={getInput} name="checkIn" className={`form-control ${show && errorMessage.checkIn ?"border-danger ":""}`} id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                         <label for="exampleInputEmail1" className="form-label hotel-label">Check In*</label>
+                         <input type="date" onChange={getInput} name="checkIn" className={`form-control ${show && errorMessage.checkIn ?"border-danger ":""}`} id="exampleInputEmail1"/>
                        </div>
                        <div className="mb-3 col-md-3 col-sm-4 col-12">
-                         <label for="exampleInputPassword1" className="form-label">Check Out*</label>
+                         <label for="exampleInputPassword1" className="form-label hotel-label">Check Out*</label>
                          <input type="date" onChange={getInput} name="checkOut" className={`form-control ${show && errorMessage.checkOut ?"border-danger ":""}`} id="exampleInputPassword1"/>
                        </div>
                        <div className="mb-3 col-md-3 col-sm-4 col-12">
-                         <label for="exampleInputPassword1" className={`form-label `}>Select Hotel*</label>
+                         <label for="exampleInputPassword1" className={`form-label hotel-label `}>Select Hotel*</label>
                          <select class={`form-select ${show && errorMessage.hotel?"border-danger":""}`} onChange={getInput} name="hotel"  aria-label="Default select example">
                            <option selected>Select Hotel  </option>
                            <option>Hotel SPB-87</option>
@@ -159,21 +158,23 @@ export default function HotelAmritVilla() {
                          </select>
                        </div>
                        <div className="mb-3 col-md-3 col-sm-4 col-12">
-                         <label for="exampleInputPassword1" className="form-label">No Attendees*</label>
+                         <label for="exampleInputPassword1" className="form-label hotel-label">No Attendees*</label>
                          <input type="text" onChange={getInput} name="guest" className={`form-control ${show && errorMessage.guest ?"border-danger ":""}`} id="exampleInputPassword1" placeholder="No. of Attendess...."/>
                        </div>
                   </div>
                   <div className="row">
                     <div className="mb-3">
-                      <label for="exampleFormControlTextarea1" name="message"  className="form-label">Message*</label>
+                      <label for="exampleFormControlTextarea1" name="message"  className="form-label hotel-label">Message*</label>
                       <textarea className={`form-control ${show && errorMessage.message ?"border-danger ":""}`} name="message" onChange={getInput} id="exampleFormControlTextarea1" rows="3" placeholder="Write a Message ....."></textarea>
                     </div>
                   </div>
   
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button type="submit" className="btn btn-primary ms-3">Submit</button>
                           </form>
                       </div>
           </div>
+
+          
       </div>
       </div>
   </div>

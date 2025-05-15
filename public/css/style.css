@@ -61,6 +61,9 @@
     padding-top: 30px;
 }
 
+.hotel-slider{
+height: 550px;
+}
 
 
 
@@ -71,6 +74,30 @@
 
 /* brand  */
 @media only screen and (max-width: 600px){
+    .hotel-spb-form>form{
+     padding-top: 30px;
+     width: 100%;
+     margin: auto;
+    }
+   .hotel-spb-form{
+    background: #ffffff;
+    height: 57rem;
+    
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.hotel-slider{
+    margin-bottom: -23rem;
+}
+ .form-control,.form-select{
+    width: 90%;
+    margin: auto;
+ }
+ .hotel-label{
+    padding-left: 20px;
+}
+
+
+
     .login{
         margin-left: -5px;
     }
