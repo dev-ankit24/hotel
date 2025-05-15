@@ -55,9 +55,9 @@ export default function Footer() {
                         </div>
 
                         <div className="col-md-6">
-                           <iframe class="position-relative rounded w-105 h-50"
+                           <iframe class="position-relative rounded w-100 " 
                             src="https://maps.google.com/maps?q=Conference+Halls+in+Delhi+-+Tomar+Hospitality++17A%2C+Block+7%2C+Block+8A%2C+WEA%2C+Karol+Bagh%2C+New+Delhi%2C+Delhi%2C+110005&output=embed"
-                            frameborder="0" style={{minHeight: "350px", border:"0"}} allowfullscreen="" aria-hidden="false"
+                            frameborder="0" style={{minHeight: "250px", border:"0"}} allowfullscreen="" aria-hidden="false"
                             tabindex="0"></iframe>
                         </div>
                     </div>
