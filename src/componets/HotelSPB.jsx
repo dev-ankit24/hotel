@@ -1,6 +1,78 @@
-
+import { useState } from "react";
+import Formvalidators from "./validation/Formvalidators"
+import toast  from "react-hot-toast"
 export default function HotelSPB() {
+  let [data, setData] = useState({
+    name:"",
+    email:"",
+    phone:"",
+    checkIn:"",
+    checkOut:"",
+    hotel:"",
+    guest:"",
+    message:""
+  })
  
+  let [show,setShow]=useState(false)
+  let [errorMessage,setErrorMessage]= useState( {
+    name:"Name Field Is Required",
+    email:"Email Field Is Required",
+    phone:"Phone Field Is Required",
+    checkIn:"CheckIn Date Field  Is Required",
+    checkOut:"CheckOut Date Field Is Required",
+    hotel:"Select Hotel Field Is Required ",
+    guest:"Number Of Attendess Field Is Required",
+    message:"Message Field Is Required"
+  })
+
+
+ function getInput(e){
+  let {value,name}=e.target;
+  if(name==="name"||name==="email"||name==="phone"|| name==="checkIn"||name==="checkOut"||name==="hotel"||name==="guest"|| name==="message"){
+    setErrorMessage((x)=>{
+      return{
+        ...x,
+        [name]:Formvalidators(e)
+      }
+    })
+  }
+  setData((x)=>{
+    return{
+      ...x,
+      [name]:value
+    }
+  })
+    
+ }
+
+ async function postData(e){
+      e.preventDefault()
+      let error= Object.values(errorMessage).find((x)=>x.length>0)
+      if(error){
+        setShow(true)
+        console.log(error);
+        
+      }
+      else{
+        let res = await fetch("http://localhost:5000/api/bookroom",{
+          method:"POST",
+          headers:{
+            "Content-type":"application/json"
+          },
+          body:JSON.stringify({...data})
+        })
+        res = await res.json()
+
+        if(res.result==="Done"){
+          toast.success("Hotel Query Has Been Submitted")
+          window.location.reload()
+        }
+        else
+         console.log(error, "Record Not Found");
+         
+      }
+ }
+
   return (
     <>
       {/* Header Section */}
@@ -50,54 +122,56 @@ export default function HotelSPB() {
           <div className="col-md-12 ">
                       <div className="hotel-spb-form">
                             <h3 className="text-center">Query Form </h3>
-                            <form>
+                            <form onSubmit={postData}>
 
 
                   <div className="row">
                      <div className="mb-3 col-md-4 col-sm-4 col-12 ">
                          <label for="exampleInputEmail1" className="form-label">Name*</label>
-                         <input type="text" className="form-control" id="exampleInputEmail1" placeholder="Enter Your Full Name....." aria-describedby="emailHelp"/>
+                         <input type="text" name="name" onChange={getInput} className={`form-control ${show && errorMessage.name ?"border-danger ":""}`} id="exampleInputEmail1" placeholder="Enter Your Full Name....." aria-describedby="emailHelp"/>
+                      {/* {show && errorMessage?<p className="text-danger">{errorMessage.name}</p>:""} */}
                        </div>
                        <div className="mb-3 col-md-4 col-sm-4 col-12">
                          <label for="exampleInputPassword1" className="form-label">Email*</label>
-                         <input type="email" className="form-control" id="exampleInputPassword1" placeholder="Enter Your Email Address..... "/>
+                         <input type="email"onChange={getInput} name="email" className={`form-control ${show && errorMessage.email ?"border-danger ":""}`} id="exampleInputPassword1" placeholder="Enter Your Email Address..... "/>
                        </div>
                        <div className="mb-3 col-md-4 col-sm-4 col-12">
                          <label for="exampleInputPassword1" className="form-label">Phone*</label>
-                         <input type="number" className="form-control" id="exampleInputPassword1" placeholder="Enter Your Phone ....."/>
+                         <input type="number"onChange={getInput}  name="phone" className={`form-control ${show && errorMessage.phone ?"border-danger ":""}`} id="exampleInputPassword1" placeholder="Enter Your Phone ....."/>
                        </div>
                   </div>
                   <div className="row">
                      <div className="mb-3 col-md-3 col-sm-4 col-12">
                          <label for="exampleInputEmail1" className="form-label">Check In*</label>
-                         <input type="date" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                         <input type="date" onChange={getInput} name="checkIn" className={`form-control ${show && errorMessage.checkIn ?"border-danger ":""}`} id="exampleInputEmail1" aria-describedby="emailHelp"/>
                        </div>
                        <div className="mb-3 col-md-3 col-sm-4 col-12">
                          <label for="exampleInputPassword1" className="form-label">Check Out*</label>
-                         <input type="date" className="form-control" id="exampleInputPassword1"/>
+                         <input type="date" onChange={getInput} name="checkOut" className={`form-control ${show && errorMessage.checkOut ?"border-danger ":""}`} id="exampleInputPassword1"/>
                        </div>
                        <div className="mb-3 col-md-3 col-sm-4 col-12">
-                         <label for="exampleInputPassword1" className="form-label">Select Hotel*</label>
-                         <select class="form-select" aria-label="Default select example">
-                           <option selected>Hotel SPB-87  </option>
-                           <option value="1"> Hotel Amrit Villa</option>
-                           <option value="2">Other</option>
+                         <label for="exampleInputPassword1" className={`form-label `}>Select Hotel*</label>
+                         <select class={`form-select ${show && errorMessage.hotel?"border-danger":""}`} onChange={getInput} name="hotel"  aria-label="Default select example">
+                           <option selected>Select Hotel  </option>
+                           <option>Hotel SPB-87</option>
+                           <option > Hotel Amrit Villa</option>
+                           <option>Other</option>
                          </select>
                        </div>
                        <div className="mb-3 col-md-3 col-sm-4 col-12">
                          <label for="exampleInputPassword1" className="form-label">No Attendees*</label>
-                         <input type="text" className="form-control" id="exampleInputPassword1" placeholder="No. of Attendess...."/>
+                         <input type="text" onChange={getInput} name="guest" className={`form-control ${show && errorMessage.guest ?"border-danger ":""}`} id="exampleInputPassword1" placeholder="No. of Attendess...."/>
                        </div>
                   </div>
                   <div className="row">
                     <div className="mb-3">
-                      <label for="exampleFormControlTextarea1" className="form-label">Message*</label>
-                      <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write a Message ....."></textarea>
+                      <label for="exampleFormControlTextarea1" name="message"  className="form-label">Message*</label>
+                      <textarea className={`form-control ${show && errorMessage.message ?"border-danger ":""}`} name="message" onChange={getInput} id="exampleFormControlTextarea1" rows="3" placeholder="Write a Message ....."></textarea>
                     </div>
                   </div>
   
             <button type="submit" className="btn btn-primary">Submit</button>
-           </form>
+                          </form>
                       </div>
           </div>
       </div>

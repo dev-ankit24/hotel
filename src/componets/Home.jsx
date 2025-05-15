@@ -9,14 +9,11 @@ export default function Home() {
   return (
     <>
     <Slider/> 
-    {/* <Booking/> */}
     <About/>
     <Room/>
     <Brand/>
     <Services/>
-    {/* <Testimonials/> */}
     <Team/>
-    {/* <Subscribe/> */}
     </>
   )
 }
