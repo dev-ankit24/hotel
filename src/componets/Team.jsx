@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 export default function Team() {
   return (
 <>
@@ -28,7 +28,7 @@ export default function Team() {
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
                                 {/* <small>Designation</small> */}
-                                <p>"Lorem ipsum dolor sit amet, molestias repudiandae id quasi sed non a. Omnis, hic repudiandae velit id voluptatum ab illo expedita culpa magnam".</p>
+                                <p><sup><RiDoubleQuotesL className='text-success fs-3' /></sup>We reserved the hall for a modest family gathering. Everything went without a hitch. The food was delicious, and the service was excellent. Many thanks to the crew.</p>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ export default function Team() {
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-half text-warning"></i>
                                 {/* <small>Designation</small> */}
-                                <p>"Lorem ipsum dolor sit amet, molestias repudiandae id quasi sed non a. Omnis, hic repudiandae velit id voluptatum ab illo expedita culpa magnam".</p>
+                                <p><sup><RiDoubleQuotesL className='text-success fs-3' /></sup>Being close to the metro makes the location extremely convenient. The rooms were comfortable and well-kept. Overall, good value. </p>
 
                             </div>
                         </div>
@@ -72,7 +72,7 @@ export default function Team() {
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-half text-warning"></i>
                                 {/* <small>Designation</small> */}
-                                <p>"Lorem ipsum dolor sit amet, molestias repudiandae id quasi sed non a. Omnis, hic repudiandae velit id voluptatum ab illo expedita culpa magnam".</p>
+                                <p><sup><RiDoubleQuotesL className='text-success fs-3' /></sup>I stayed here on a business trip; the rooms were clean, the staff was helpful, and the hotel was well-run." I would highly recommend it if you happen to be around</p>
 
                             </div>
                         </div>
@@ -95,7 +95,7 @@ export default function Team() {
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-half text-warning"></i>
                                 {/* <small>Designation</small> */}
-                                <p>"Lorem ipsum dolor sit amet, molestias repudiandae id quasi sed non a. Omnis, hic repudiandae velit id voluptatum ab illo expedita culpa magnam".</p>
+                               <p> <sup><RiDoubleQuotesL className='text-success fs-3' /></sup> I thought the event area was set up well. We had what we needed, including a projector, microphone, and comfortable seats. Additionally, the tea and cookies were freshly made.</p>
 
                             </div>
                         </div>

@@ -1,5 +1,7 @@
 import React from 'react'
-
+import { FaWifi } from "react-icons/fa";
+import { GiCoffeeCup } from "react-icons/gi";
+import { TbAirConditioning } from "react-icons/tb";
 export default function Services() {
   return (
     <>
@@ -15,37 +17,37 @@ export default function Services() {
                         <a class="service-item rounded" href="">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-hotel fa-2x text-primary"></i>
+                                   <FaWifi className='fs-2' />
                                 </div>
                             </div>
-                            <h5 class="mb-3">Rooms & Appartment</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <h5 class="mb-3">Free Internet</h5>
+                            <p class="text-body mb-0">Throughout your stay, stay connected with free, fast wifi internet.</p>
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <a class="service-item rounded" href="">
+                        <a class="service-item rounded" href="/">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-utensils fa-2x text-primary"></i>
+                                  <GiCoffeeCup className='fs-2' />
                                 </div>
                             </div>
-                            <h5 class="mb-3">Food & Restaurant</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <h5 class="mb-3">Coffee & Tea Excellent</h5>
+                            <p class="text-body mb-0">Savor a variety of fine teas and freshly prepared coffee at any time.</p>
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="service-item rounded" href="">
+                        <a class="service-item rounded" href="/">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-spa fa-2x text-primary"></i>
+                                    <TbAirConditioning className='fs-2' />
                                 </div>
                             </div>
-                            <h5 class="mb-3">Spa & Fitness</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <h5 class="mb-3">AC Rooms</h5>
+                            <p class="text-body mb-0">Unwind in our air-conditioned rooms, which have been thoughtfully constructed for your convenience and comfort.</p>
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <a class="service-item rounded" href="">
+                        <a class="service-item rounded" href="/">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
                                     <i class="fa fa-swimmer fa-2x text-primary"></i>
@@ -56,7 +58,7 @@ export default function Services() {
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="service-item rounded" href="">
+                        <a class="service-item rounded" href="/">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
                                     <i class="fa fa-glass-cheers fa-2x text-primary"></i>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
 
@@ -50,7 +50,9 @@ export default function Navbar() {
                     <div className="col-lg-3 bg-dark d-none d-lg-block">
                         <NavLink to=" " className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
                             <h1 className="m-0 text-primary text-uppercase">
-                                <img src="/img/logotomar.png" alt="tomar logo image" height={150} width={150} />
+                          <Link to="/">
+                           <img src="/img/logotomar.png" alt="tomar logo image" height={150} width={150} />
+                          </Link>     
                             </h1>
                         </NavLink>
                     </div>
@@ -79,7 +81,7 @@ export default function Navbar() {
                         <nav className="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
                             <a href="index.html" className="navbar-brand d-block d-lg-none">
                                 <h1 className="m-0 text-primary text-uppercase">
-                                    <img src="/img/logotomar.png" alt="tomar logo image" height={80} width={100} />
+                                   <Link to="/"> <img src="/img/logotomar.png" alt="tomar logo image" height={80} width={100} /></Link>
                                 </h1>
                             </a>
                             <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
