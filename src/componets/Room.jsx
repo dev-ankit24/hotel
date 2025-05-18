@@ -24,6 +24,20 @@ const [showDeluxeModal, setShowDeluxeModal] = useState(false);
                     <h1 className="mb-5">Explore Our <span className="text-primary text-uppercase">Rooms</span></h1>
                 </div>
                 <div className="row g-4">
+
+                <div className="col-md-12 col-sm-12 col-12 text-center">
+                  <p>
+                    We don't provide just rooms at Tomar Hospitality — we provide a space where you can unwind and feel at ease. Whether you are visiting on business, on a quick getaway, or with family, we have planned each area to make your stay easy and restful.
+                    <br />
+                    Our hotel is located in the bustling middle of Karol Bagh, just a short walk from the metro. Which means you're within reach of everything the city can give you, but you also have a quiet place to return to at night.
+                  </p>
+                </div>
+
+
+
+
+
+
                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div className="room-item shadow rounded overflow-hidden">
                             <div className="position-relative" height={"110px"}>
@@ -46,7 +60,7 @@ const [showDeluxeModal, setShowDeluxeModal] = useState(false);
                                     <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
                                     <small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
                                 </div>
-                                <p className="text-body mb-3" style={{textAlign:"justify"}}>This is an easy-to-use option that's perfect for short visits. It is a good choice for small families or friends seeking a tidy and comfortable place to stay because it has three beds, two bathrooms, and Wi-Fi.</p>
+                                <p className="text-body mb-3" style={{textAlign:"justify"}}> A cozy, comfortable room, perfect for solo travelers or couples to rest and recharge</p>
                                 <div className="d-flex justify-content-between">
                                     <a className="btn btn-sm btn-primary rounded py-2 px-4" onClick={() => openModal(2)}>Explore</a>
                                     <Link to="/booking" className="btn btn-sm btn-dark rounded py-2 px-4" >Book Now</Link>
@@ -76,7 +90,7 @@ const [showDeluxeModal, setShowDeluxeModal] = useState(false);
                                     <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
                                     <small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
                                 </div>
-                                <p className="text-body mb-3"style={{textAlign:"justify"}}>This room offers you a little more breathing room and is more comfortable. It's a good choice if you're staying for more than a night or simply want more space because it has three beds, two bathrooms, and a reliable Wi-Fi connection.</p>
+                                <p className="text-body mb-3"style={{textAlign:"justify"}}>Ideal for friends or colleagues who want their own beds but prefer sharing a room.</p>
                                 <div className="d-flex justify-content-between">
                                     <a class="btn btn-primary  py-2 px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="">Explore</a>
                                     <Link  to="/booking" className="btn btn-sm btn-dark rounded py-2 px-4" >Book Now</Link>
@@ -106,7 +120,7 @@ const [showDeluxeModal, setShowDeluxeModal] = useState(false);
                                     <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
                                     <small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
                                 </div>
-                                <p className="text-body mb-3 " style={{textAlign:"justify"}}>This is for people who prefer a slightly more laid-back stay. It offers more room to spread out, whether you're here for business or just relaxing with family. It has three beds, two bathrooms, and Wi-Fi.</p>
+                                <p className="text-body mb-3 " style={{textAlign:"justify"}}>Super Deluxe is ideal for friends beds, two bathrooms, and Wi-Fi in a shared space.</p>
                                 <div className="d-flex justify-content-between">
                                     <a   class="btn btn-primary  py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal" href="">Explore</a>
                                     <Link to="/booking" className="btn btn-sm btn-dark rounded py-2 px-4" >Book Now</Link>
@@ -119,7 +133,7 @@ const [showDeluxeModal, setShowDeluxeModal] = useState(false);
                         <div className="room-item shadow rounded overflow-hidden">
                             <div className="position-relative" >
                                 <img className="img-fluid" src="/img/room/all-room/room7.webp"  alt=""/>
-                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 1521/Night</small>
+                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 1799/Night</small>
                             </div>
                             <div className="p-4 mt-2">
                                 <div className="d-flex justify-content-between mb-3">
@@ -137,7 +151,7 @@ const [showDeluxeModal, setShowDeluxeModal] = useState(false);
                                     <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
                                     <small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
                                 </div>
-                                <p className="text-body mb-3 " style={{textAlign:"justify"}}>This is for people who prefer a slightly more laid-back stay. It offers more room to spread out, whether you're here for business or just relaxing with family. It has three beds, two bathrooms, and Wi-Fi.</p>
+                                <p className="text-body mb-3 " style={{textAlign:"justify"}}>Perfect for couples or solo travelers—enjoy a spacious room with premium comfort, elegant décor, and fast Wi-Fi.</p>
                                 <div className="d-flex justify-content-between">
                                     <a   class="btn btn-primary  py-2 px-4"  onClick={()=>setShowClassicModal(true)}  >Explore</a>
                                     <Link to="/booking" className="btn btn-sm btn-dark rounded py-2 px-4" >Book Now</Link>
@@ -150,7 +164,7 @@ const [showDeluxeModal, setShowDeluxeModal] = useState(false);
                         <div className="room-item shadow rounded overflow-hidden">
                             <div className="position-relative" >
                                 <img className="img-fluid" src="/img/room/all-room/room4.webp"  alt=""/>
-                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 1521/Night</small>
+                                <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 1859/Night</small>
                             </div>
                             <div className="p-4 mt-2">
                                 <div className="d-flex justify-content-between mb-3">
@@ -168,7 +182,7 @@ const [showDeluxeModal, setShowDeluxeModal] = useState(false);
                                     <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
                                     <small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
                                 </div>
-                                <p className="text-body mb-3 " style={{textAlign:"justify"}}>This is for people who prefer a slightly more laid-back stay. It offers more room to spread out, whether you're here for business or just relaxing with family. It has three beds, two bathrooms, and Wi-Fi.</p>
+                                <p className="text-body mb-3 " style={{textAlign:"justify"}}> Ideal for families seeking space and comfort—features multiple beds, two bathrooms, and Wi-Fi</p>
                                 <div className="d-flex justify-content-between">
                                     <a   class="btn btn-primary  py-2 px-4"  onClick={() => setShowDeluxeModal(true)}>Explore</a>
                                     <Link to="/booking" className="btn btn-sm btn-dark rounded py-2 px-4" >Book Now</Link>
@@ -227,7 +241,7 @@ const [showDeluxeModal, setShowDeluxeModal] = useState(false);
 
 
 
-<p className="text-body mb-3">This is for people who prefer a slightly more laid-back stay. It offers more room to spread out, whether you're here for business or just relaxing with family. It has three beds, two bathrooms, and Wi-Fi.</p>
+<p className="text-body mb-3">Super Deluxe is ideal for friends beds, two bathrooms, and Wi-Fi in a shared space.</p>
 
 
 
@@ -281,7 +295,7 @@ const [showDeluxeModal, setShowDeluxeModal] = useState(false);
   </button>
       </div>
 
-<p className="text-body mb-3">This room offers you a little more breathing room and is more comfortable. It's a good choice if you're staying for more than a night or simply want more space because it has three beds, two bathrooms, and a reliable Wi-Fi connection.</p>
+<p className="text-body mb-3">Ideal for friends or colleagues who want their own beds but prefer sharing a room.</p>
 
 
       </div>
@@ -330,7 +344,7 @@ const [showDeluxeModal, setShowDeluxeModal] = useState(false);
 </div>
 
 
-<p className="text-body mb-3">This is an easy-to-use option that's perfect for short visits. It is a good choice for small families or friends seeking a tidy and comfortable place to stay because it has three beds, two bathrooms, and Wi-Fi.
+<p className="text-body mb-3">A cozy, comfortable room, perfect for solo travelers or couples to rest and recharge.
 
 </p>
 
@@ -382,7 +396,7 @@ const [showDeluxeModal, setShowDeluxeModal] = useState(false);
               <span className="visually-hidden">Next</span>
             </button>
           </div>
-          <p className="text-body mb-3">This is a simple and clean Classic Room, perfect for short stays with 3 beds, 2 bathrooms, and Wi-Fi.</p>
+          <p className="text-body mb-3">Perfect for couples or solo travelers—enjoy a spacious room with premium comfort, elegant décor, and fast Wi-Fi.</p>
         </div>
         <div className="modal-footer">
           <button type="button" className="btn btn-secondary" onClick={closeClassicModal}>Close</button>
