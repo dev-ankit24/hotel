@@ -10,7 +10,7 @@ export default function Brand() {
                     <div class="p-5  brand-btn">
                         <h6 class="section-title text-start text-white text-uppercase mb-3">Luxury Living</h6>
                         <h1 class="text-white mb-4">Discover A Tomar Hospitality Luxurious Rooms</h1>
-                        <p class="text-white mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <p class="text-white mb-4">Modern comfort meets timeless elegance. Prime location, warm service. Unwind, relax, and stay with style. Where every moment feels just right.</p>
                         
                         <div className='brand-btn1'>
                         {/* <Link to="/room" href="" class="btn btn-primary py-md-3 px-md-5 me-3">Our Rooms</Link> */}

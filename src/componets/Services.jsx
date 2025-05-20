@@ -46,7 +46,7 @@ export default function Services() {
                             <p class="text-body mb-0">Unwind in our air-conditioned rooms, which have been thoughtfully constructed for your convenience and comfort.</p>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    {/* <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                         <a class="service-item rounded" href="/">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
@@ -56,8 +56,8 @@ export default function Services() {
                             <h5 class="mb-3">Sports & Gaming</h5>
                             <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                         </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    </div> */}
+                    {/* <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <a class="service-item rounded" href="/">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
@@ -67,8 +67,8 @@ export default function Services() {
                             <h5 class="mb-3">Event & Party</h5>
                             <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                         </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    </div> */}
+                    {/* <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                         <a class="service-item rounded" href="">
                             <div class="service-icon bg-transparent border rounded p-1">
                                 <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
@@ -78,7 +78,7 @@ export default function Services() {
                             <h5 class="mb-3">GYM & Yoga</h5>
                             <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
