@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
-import Booking from './partials/Booking'
-import Subscribe from './partials/Subscribe'
+import React, { useEffect, useState } from 'react'
+import roomData from "./roomData"
 import toast from 'react-hot-toast';
 import Formvalidators from './validation/Formvalidators';
+import { useParams } from 'react-router-dom';
 export default function BookingPage() {
+    let [singelRoom, setSingleRoom]=useState([])
+    let {_id}= useParams()
+    
     let [data, setData]= useState({
         name:"",
         phone:"",
@@ -81,8 +84,33 @@ async function postData(e) {
       console.error("Fetch failed:", err);
     }
   }
+
+
+}
+ console.log(_id);
+ 
+//   single room 
+function getSingleRoomData() {
+  const item = roomData.find((x) => x._id?.toString() === _id?.toString());
+  if (item) {
+    setSingleRoom(item);
+  } else {
+  }
 }
 
+useEffect(() => {
+  if (roomData.length) {
+    getSingleRoomData();
+  }
+}, [roomData]);
+
+ 
+  // single room data
+//  if (Array.isArray(roomData)) {
+//    let item = roomData?.find((x) => x._id === _id);
+// } else {
+//   console.error("data is not an array:", typeof data);
+// }
 
 
 
@@ -109,7 +137,7 @@ async function postData(e) {
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="section-title text-center text-primary text-uppercase">Room Booking</h6>
-                    <h1 class="mb-5">Book A <span class="text-primary text-uppercase">Luxury Room</span></h1>
+                    <h1 class="mb-5">Book A <span class="text-primary text-uppercase">{singelRoom.name}</span></h1>
                 </div>
                 <div class="row g-5">
                     <div class="col-lg-6">

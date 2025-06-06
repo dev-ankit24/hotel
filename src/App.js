@@ -16,6 +16,7 @@ import HotelSPB from "./componets/HotelSPB";
 import HotelAmritVilla from "./componets/HotelAmritVilla";
 import ScrollToTop from "./componets/partials/ScrollToTop";
 import  { Toaster } from 'react-hot-toast';
+// import "./componets/asserts/css/style."
 function App() {
 
   
@@ -34,12 +35,12 @@ function App() {
         <Route path="/hotel-spb-87" element={<HotelSPB/>}/>
          <Route path="/hotel-amrit-villa" element={<HotelAmritVilla/>}/>
         <Route path="/room" element={<RoomPage/>}/>
-        <Route path="/booking" element={<BookingPage/>}/>
+        <Route path={`/booking/:_id`} element={<BookingPage/>}/>
         <Route path="/team" element={<TeamPage/>}/>
         <Route path="/testimonial" element={<TestimonialPage/>}/>
         <Route path="/contact" element={<ContactUsPage/>}/>
         <Route path="/gallery" element={<Gallery/>}/>
-        <Route path="/*" element={<Error404/>}/>
+        <Route path="*" element={<Error404/>}/>
 
     </Routes>
     <Footer/>
