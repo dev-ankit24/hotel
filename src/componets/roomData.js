@@ -2,7 +2,7 @@ const data =[
     {
      _id :101,
      name:"Classic Room",
-     img:"/img/room/super/super-room2.jpg",
+     img:"/img/room/super/Super-room2.jpg",
      price:1010,
      description:"A cozy, comfortable room, perfect for solo travelers or couples to rest and recharge."
     },
