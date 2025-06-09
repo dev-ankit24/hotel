@@ -89,7 +89,7 @@ export default function HotelSiam() {
         </div>
       </div>
 
-    <div id="carouselExample hotel-slider" className="carousel slide">
+    <div id="carouselHotel87" className="carousel slide">
   <div className="carousel-inner hotel-slider " >
     <div className="carousel-item active">
       <img src="/img/hotel-87/hotel-87.jpg" className="d-block w-100" alt="slider Hotel  "/>
@@ -104,11 +104,11 @@ export default function HotelSiam() {
       <img src="/img/room/all-room/room8.webp" className="d-block w-100" alt="..."/>
     </div>
   </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselHotel87" data-bs-slide="prev">
     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Previous</span>
   </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselHotel87" data-bs-slide="next">
     <span className="carousel-control-next-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Next</span>
   </button>
