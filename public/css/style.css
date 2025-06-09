@@ -2,7 +2,7 @@
 :root {
     --primary: #FEA116;
     /* --primary: #b99365; */
-    --light: #F1F8FF;
+    --light: #ffffff;
     /* --dark: #0F172B; */
     --dark: #000000;
     
@@ -65,9 +65,128 @@
 height: 550px;
 }
 
+/* single room (booking) */
+.singleRoom-hero-img{
+    /* margin-top: 5px; */
+    width: 100%;
+    height: 25rem;
+    border-radius: 10px;
+}
+.single-room-slider-img{
+    height: 22rem;
+}
+.single-page-description{
+    margin-top: 35px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: white;
+}
+.single-page-description>div{
+  padding: 20px;
+}
+.single-room-price-card-parent{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background: white;
+    margin-bottom: 20px;
+}
+.single-room-price-card-sub-parent{
+    padding: 20px;
+}
+.single-room-price-card-child{
+    justify-content: space-between;
+    display: flex;
+}
+.single-room-price-card-child-left{
+    color: rgb(245, 9, 88);
+}
+.single-room-map-parent{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background: white;
+}
+.single-room-map-child{
+    padding: 20px;
+}
+.single-room-map-child h5{
+    padding-bottom: 10px;
+}
+.single-page-related-room-parent{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background: white;
+}
+.single-page-related-room-parent h5{
+    padding-top: 30px;
+}
+.single-room-testimonials{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background: white; 
+}
+.confirm-page-parent{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background: white; 
+    margin-top: 25px;
+}
+.confirm-page-child{
+    padding: 20px;
+}
+.confirm-page-right-parent{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background: white; 
+    margin-top: 25px;
+}
+.confirm-page-room-details-parent{
+    padding: 20px;
+}
+.confirm-page-check-parent{
+    display: flex;
+    justify-content: space-between;
+}
+.confirm-page-check-parent>div{
+    padding-top: 20px;
+}
+.confirm-page-price-parent{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background: white; 
+    margin-top: 0px;
+}
+.confirm-page-price-child{
+    padding: 20px;
+}
+.confirm-page-price-total{
+    justify-content: space-between;
+    display: flex;
+}
+.confirm-page-price-total span{
+    font-size: 25px;
+    font-weight: 800;
+    color: #000000;
+}
+.confirm-page-price-gst{
+    margin-top: -10px;
+    margin-left: 105px;
+   /* background: red; */
+}
+.confirm-page-price-gst>small{
+    padding-left: 30px;
+}
 
-
-
+.success-booking-page-parent{
+    margin-top: 25px;
+    background: #ffffff;
+    /* height: 30rem; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.success-booking-page-subchild{
+    padding: 35px;
+}
+.success-booking-user-details{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.success-booking-page-main-right,.success-booking-page-main-left{
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+    background: white; 
+    margin-top: 0px;
+}
 
 
 
@@ -110,7 +229,32 @@ height: 550px;
     .brand-img{
         height: 100%;
     }
+
+.singleRoom-hero-img{
+    margin-top: 10px;
+    width: 100%;
+    height: 20rem;
+    border-radius: 10px;
 }
+.single-room-slider-img{
+    height: 15rem;
+}
+.confirm-page-price-gst{
+    margin-top: -10px;
+}
+.confirm-page-price-gst>small{
+    padding-left: 10px;
+}
+.confirm-page-price-parent{
+    margin-top: 0px;
+}
+
+
+
+}
+
+
+
 .login{
     margin-right:100px;
 }
@@ -576,6 +720,7 @@ height: 550px;
     transition: .3s;
 }
 
+
 .footer .btn.btn-social:hover {
     color: var(--primary);
 }
@@ -592,13 +737,13 @@ height: 550px;
     transition: .3s;
 }
 
-.footer .btn.btn-link::before {
+/* .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
-}
+} */
 
 .footer .btn.btn-link:hover {
     letter-spacing: 1px;

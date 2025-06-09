@@ -12,10 +12,12 @@ import TestimonialPage from "./componets/TestimonialPage";
 import ContactUsPage from "./componets/ContactUsPage";
 import Error404 from "./componets/Error404";
 import Gallery from "./componets/Gallery";
-import HotelSPB from "./componets/HotelSPB";
 import HotelAmritVilla from "./componets/HotelAmritVilla";
 import ScrollToTop from "./componets/partials/ScrollToTop";
 import  { Toaster } from 'react-hot-toast';
+import ConfirmPage from "./componets/ConfirmPage";
+import SuccessBookingPage from "./componets/SuccessBookingPage";
+import HotelSiam from "./componets/HotelSiam";
 // import "./componets/asserts/css/style."
 function App() {
 
@@ -25,21 +27,24 @@ function App() {
   <BrowserRouter>
   <ScrollToTop/>
       <Toaster position="top-right"
-  reverseOrder={false} />
+    reverseOrder={false} />
    <Navbar/>
    {/* <Slider/> */}
    {/* <Home/> */}
     <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<AboutUs/>}/>
-        <Route path="/hotel-spb-87" element={<HotelSPB/>}/>
-         <Route path="/hotel-amrit-villa" element={<HotelAmritVilla/>}/>
+        <Route path="/hotel-siam" element={<HotelSiam/>}/>
+        <Route path="/hotel-amrit-villa" element={<HotelAmritVilla/>}/>
         <Route path="/room" element={<RoomPage/>}/>
         <Route path={`/booking/:_id`} element={<BookingPage/>}/>
         <Route path="/team" element={<TeamPage/>}/>
         <Route path="/testimonial" element={<TestimonialPage/>}/>
         <Route path="/contact" element={<ContactUsPage/>}/>
         <Route path="/gallery" element={<Gallery/>}/>
+        <Route path="/confirm/:_id" element={<ConfirmPage/>}/>
+        <Route path="/success" element={<SuccessBookingPage/>}/>
+
         <Route path="*" element={<Error404/>}/>
 
     </Routes>

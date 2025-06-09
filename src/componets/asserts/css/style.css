@@ -2,7 +2,7 @@
 :root {
     --primary: #FEA116;
     /* --primary: #b99365; */
-    --light: #F1F8FF;
+    --light: #ffffff;
     /* --dark: #0F172B; */
     --dark: #000000;
     
@@ -64,7 +64,6 @@
 .hotel-slider{
 height: 550px;
 }
-
 
 
 

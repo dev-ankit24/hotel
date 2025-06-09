@@ -38,13 +38,13 @@ export default function Room() {
 
 
              {
-              data?.map((item,index)=>{
+              data?.slice("0","3").map((item,index)=>{
                 return(
                   <>
                   <div className="col-lg-4 col-md-6 wow fadeInUp"  key={index} data-wow-delay="0.1s">
               <div className="room-item shadow rounded overflow-hidden " >
                 <div className="position-relative" >
-                  <img className="img-fluid" src={item.img} height={"110px"} width={"100%"} alt="" />
+                  <img className="img-fluid" src={item.img[0]} height={"110px"} width={"100%"} alt="" />
                   <small className="position-absolute start-0 top-100 translate-middle-y bg-success text-white rounded py-1 px-3 ms-4">&#8377;{item.price}/night</small>
                 </div>
                 <div className="p-4 mt-2">
@@ -65,12 +65,55 @@ export default function Room() {
                   </div>
                   <p className="text-body mb-3" style={{ textAlign: "justify" }}> {item.description}</p>
                   <div className="d-flex justify-content-between">
-                    <a className="btn btn-sm btn-primary rounded py-2 px-4" onClick={() => openModal(2)}>Explore</a>
-                    <Link to={`/booking/${item._id} `} className="btn btn-sm btn-dark rounded py-2 px-4" >Book Now</Link>
+                    {/* <a className="btn btn-sm btn-primary rounded py-2 px-4" onClick={() => openModal(2)}>Explore</a> */}
+                    <Link to={`/booking/${item._id}`} className="btn w-100 btn-sm btn-dark rounded py-2 px-4" >Book Now</Link>
                   </div>
                 </div>
               </div>
-            </div>
+                 </div>
+                  </>
+                )
+              })
+             }
+
+
+          </div>
+
+             <div className="row ">
+             {
+              data?.slice("3","5").map((item,index)=>{
+                return(
+                  <>
+                  <div className="col-lg-4 mt-4  m-auto col-md-6 wow fadeInUp"  key={index} data-wow-delay="0.1s">
+              <div className="room-item shadow rounded overflow-hidden " >
+                <div className="position-relative" >
+                  <img className="img-fluid" src={item.img[0]} height={"110px"} width={"100%"} alt="" />
+                  <small className="position-absolute start-0 top-100 translate-middle-y bg-success text-white rounded py-1 px-3 ms-4">&#8377;{item.price}/night</small>
+                </div>
+                <div className="p-4 mt-2">
+                  <div className="d-flex justify-content-between mb-3">
+                    <h5 className="mb-0">{item.name}</h5>
+                    <div className="ps-2">
+                      <small className="fa fa-star text-primary"></small>
+                      <small className="fa fa-star text-primary"></small>
+                      <small className="fa fa-star text-primary"></small>
+                      <small className="fa fa-star text-primary"></small>
+                      <small className="fa fa-star text-primary"></small>
+                    </div>
+                  </div>
+                  <div className="d-flex mb-3">
+                    <small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                    <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                    <small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                  </div>
+                  <p className="text-body mb-3" style={{ textAlign: "justify" }}> {item.description}</p>
+                  <div className="d-flex justify-content-between">
+                    {/* <a className="btn btn-sm btn-primary rounded py-2 px-4" onClick={() => openModal(2)}>Explore</a> */}
+                    <Link to={`/booking/${item._id}`} className="btn w-100 btn-sm btn-dark rounded py-2 px-4" >Book Now</Link>
+                  </div>
+                </div>
+              </div>
+                 </div>
                   </>
                 )
               })
@@ -78,129 +121,7 @@ export default function Room() {
 
 
             
-            {/* <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div className="room-item shadow rounded overflow-hidden">
-                <div className="position-relative"  >
-                  <img className="img-fluid" src="/img/room/deluxe/deluxe3.jpg" width={"100%"} alt="" />
-                  <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; /Night</small>
-                </div>
-                <div className="p-4 mt-2">
-                  <div className="d-flex justify-content-between mb-3">
-                    <h5 className="mb-0">Deluxe Room</h5>
-                    <div className="ps-2">
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                    </div>
-                  </div>
-                  <div className="d-flex mb-3">
-                    <small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                    <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                    <small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                  </div>
-                  <p className="text-body mb-3" style={{ textAlign: "justify" }}></p>
-                  <div className="d-flex justify-content-between">
-                    <a class="btn btn-primary  py-2 px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="">Explore</a>
-                    <Link to="/booking" className="btn btn-sm btn-dark rounded py-2 px-4" >Book Now</Link>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-            {/* <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-              <div className="room-item shadow rounded overflow-hidden">
-                <div className="position-relative" >
-                  <img className="img-fluid" src="/img/room/super/Super-room3.jpg" alt="" />
-                  <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 1521/Night</small>
-                </div>
-                <div className="p-4 mt-2">
-                  <div className="d-flex justify-content-between mb-3">
-                    <h5 className="mb-0">Super Deluxe Room</h5>
-                    <div className="ps-2">
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                    </div>
-                  </div>
-                  <div className="d-flex mb-3">
-                    <small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                    <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                    <small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                  </div>
-                  <p className="text-body mb-3 " style={{ textAlign: "justify" }}>Super Deluxe is ideal for friends beds, two bathrooms, and Wi-Fi in a shared space.</p>
-                  <div className="d-flex justify-content-between">
-                    <a class="btn btn-primary  py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal" href="">Explore</a>
-                    <Link to="/booking" className="btn btn-sm btn-dark rounded py-2 px-4" >Book Now</Link>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-              <div className="room-item shadow rounded overflow-hidden">
-                <div className="position-relative" >
-                  <img className="img-fluid" src="/img/room/all-room/room7.webp" alt="" />
-                  <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 1799/Night</small>
-                </div>
-                <div className="p-4 mt-2">
-                  <div className="d-flex justify-content-between mb-3">
-                    <h5 className="mb-0">Suite Room</h5>
-                    <div className="ps-2">
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                    </div>
-                  </div>
-                  <div className="d-flex mb-3">
-                    <small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                    <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                    <small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                  </div>
-                  <p className="text-body mb-3 " style={{ textAlign: "justify" }}>Perfect for couples or solo travelers—enjoy a spacious room with premium comfort, elegant décor, and fast Wi-Fi.</p>
-                  <div className="d-flex justify-content-between">
-                    <a class="btn btn-primary  py-2 px-4" onClick={() => setShowClassicModal(true)}  >Explore</a>
-                    <Link to="/booking" className="btn btn-sm btn-dark rounded py-2 px-4" >Book Now</Link>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-              <div className="room-item shadow rounded overflow-hidden">
-                <div className="position-relative" >
-                  <img className="img-fluid" src="/img/room/all-room/room4.webp" alt="" />
-                  <small className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">&#8377; 1859/Night</small>
-                </div>
-                <div className="p-4 mt-2">
-                  <div className="d-flex justify-content-between mb-3">
-                    <h5 className="mb-0">Family Suite Room</h5>
-                    <div className="ps-2">
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                      <small className="fa fa-star text-primary"></small>
-                    </div>
-                  </div>
-                  <div className="d-flex mb-3">
-                    <small className="border-end me-3 pe-3"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                    <small className="border-end me-3 pe-3"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
-                    <small><i className="fa fa-wifi text-primary me-2"></i>Wifi</small>
-                  </div>
-                  <p className="text-body mb-3 " style={{ textAlign: "justify" }}> Ideal for families seeking space and comfort—features multiple beds, two bathrooms, and Wi-Fi</p>
-                  <div className="d-flex justify-content-between">
-                    <a class="btn btn-primary  py-2 px-4" onClick={() => setShowDeluxeModal(true)}>Explore</a>
-                    <Link to="/booking" className="btn btn-sm btn-dark rounded py-2 px-4" >Book Now</Link>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-
+          
 
           </div>
         </div>
@@ -422,7 +343,7 @@ export default function Room() {
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
-                <h1 className="modal-title fs-5" id="deluxeModalLabel">Deluxe Room</h1>
+                <h1 className="modal-title fs-5" id="deluxeModalLabel"> Family Suite Room</h1>
                 <button type="button" className="btn-close" onClick={closeDeluxeModal}></button>
               </div>
               <div className="modal-body">

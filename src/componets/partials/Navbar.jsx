@@ -101,8 +101,8 @@ export default function Navbar() {
         Hotel
       </span>
       <div className={`dropdown-menu rounded-0 m-0 ${dropdownOpen ? "show" : ""}`}>
-        <NavLink to="/hotel-spb-87" className="dropdown-item" onClick={() => setDropdownOpen(false)}>
-          Hotel SPB-87
+        <NavLink to="/hotel-siam" className="dropdown-item" onClick={() => setDropdownOpen(false)}>
+          Hotel Siam
         </NavLink>
         <NavLink to="/hotel-amrit-villa" className="dropdown-item" onClick={() => setDropdownOpen(false)}>
           Hotel Amrit Villa

@@ -1,9 +1,10 @@
 import React from 'react'
-import { FaPhoneAlt } from 'react-icons/fa'
+import { FaArrowUp, FaFacebookF, FaInstagram, FaPhoneAlt } from 'react-icons/fa'
 import { IoLocationSharp } from 'react-icons/io5'
 import { MdEmail } from 'react-icons/md'
 import { Link } from 'react-router-dom'
-
+import { FaXTwitter } from "react-icons/fa6";
+import { CiFacebook, CiYoutube } from "react-icons/ci";
 export default function Footer() {
   return (
     <>
@@ -36,10 +37,12 @@ export default function Footer() {
                                                     <a href="mailto:tomarhospitality@gmail.com" className='text-light'>tomarhospitality@gmail.com</a>
                                                     </p>
                     <div className="d-flex pt-2">
-                        <a className="btn btn-outline-light btn-social" href="https://x.com/TomarConference" target='_blank'><i className="fab fa-twitter"></i></a>
-                        <a className="btn btn-outline-light btn-social" href="https://www.facebook.com/tomarhospitality" target='_blank'><i className="fab fa-facebook-f"></i></a>
-                        <a className="btn btn-outline-light btn-social" href="https://www.youtube.com/channel/UC_FGfQHKHQZGlDCFFGAtiUw" target='_blank'><i className="fab fa-youtube"></i></a>
-                        <a className="btn btn-outline-light btn-social" href="https://www.instagram.com/tomarhospitality/" target='_blank'><i className="fab fa-instagram"></i></a>
+                        <a className="btn btn-outline-light btn-social "  href="https://x.com/TomarConference" target='_blank'><span ><FaXTwitter   /></span>
+                        
+                        </a>
+                        <a className="btn btn-outline-light btn-social" href="https://www.facebook.com/tomarhospitality" target='_blank'><span ><FaFacebookF /></span></a>
+                        <a className="btn btn-outline-light btn-social" href="https://www.youtube.com/channel/UC_FGfQHKHQZGlDCFFGAtiUw" target='_blank'><span ><CiYoutube /></span></a>
+                        <a className="btn btn-outline-light btn-social" href="https://www.instagram.com/tomarhospitality/" target='_blank'><span ><FaInstagram  /></span></a>
                     </div>
                 </div>
                 <div className="col-lg-5 col-md-12">
@@ -58,7 +61,7 @@ export default function Footer() {
                            <iframe class="position-relative rounded w-100 " 
                             src="https://maps.google.com/maps?q=Conference+Halls+in+Delhi+-+Tomar+Hospitality++17A%2C+Block+7%2C+Block+8A%2C+WEA%2C+Karol+Bagh%2C+New+Delhi%2C+Delhi%2C+110005&output=embed"
                             frameborder="0" style={{minHeight: "250px", border:"0"}} allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
+                            tabindex="0"/>
                         </div>
                     </div>
                 </div>
@@ -87,7 +90,7 @@ export default function Footer() {
 
 
     {/* <!-- Back to Top --> */}
-    <a href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top"><i className="bi bi-arrow-up"></i></a>
+    <a href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top"><FaArrowUp /></a>
 {/* </div> */}
     </>
 
