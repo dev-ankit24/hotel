@@ -118,6 +118,7 @@ export default function Navbar() {
 
                                     <NavLink to="/room" className="nav-item nav-link">Rooms</NavLink>
                                     <NavLink to="/corporate" className="nav-item nav-link">Corporate</NavLink>
+                                    <NavLink to="/banquet" className="nav-item nav-link">Banquet</NavLink>
                                     <NavLink to="/gallery" className="nav-item nav-link">Gallery</NavLink>
                                     <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
                                 </div>

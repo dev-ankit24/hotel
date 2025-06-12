@@ -305,10 +305,90 @@ height: 550px;
     align-items: center;
     padding-top: 20px;
 }
+.banquet-hero-bg-parnet{
+    height: 6rem;
+    width: 38rem;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.432);
+    border-radius: 10px;
+}
+.banquet-hero-bg-parnet>h3{
+    align-items: center;
+    padding-top: 20px;
+}
 
+.banquet-left{
+    width:100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px;
+}
+.banquet-left>img{
+    width:100%;
+    height: 27rem;
+}
+.all-type-banquet{
+    margin-top: 45px;
+}
+.party-hall-left{
+    width: 100%;
+    margin-top: 20px;
+   height: 30rem;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.party-hall-left>img{
+    width: 100%;
+   height: 30rem;
+   padding: 20px;
+   border-radius: 10px;
+}
+.party-hall-right{
+    margin-top: 35px;
+}
 
+/* party-venue destop */
+.party-venue-desktop{
+    display: flex;
+    margin-top: 85px;
+}
+.party-venue-left{
+    width: 100%;
+    padding: 15px;
+   /* height: 21rem; */
+}
 
+.party-venue-right{
+    height: 22rem;
+    width: 100%;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.party-venue-right>img{
+    height: 21rem;
+    width: 100%;
+   padding: 20px;
 
+}
+
+/* party - venue mobile */
+.party-venue-mobile{
+    display: none;
+}
+
+/* seminar training */
+.seminar-training-left{
+    width: 100%;
+    margin-top: 40px;
+   height: 18rem;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.seminar-training-left>img{
+    width: 100%;
+   height: 18rem;
+   padding: 20px;
+   border-radius: 10px;
+}
+.seminar-training-right{
+   margin-top: 50px;
+}
 
 
 
@@ -444,7 +524,69 @@ height: 550px;
     align-items: center;
     padding-top: 20px;
 }
-
+.banquet-hero-bg-parnet{
+    height: 6rem;
+    width: 100%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.432);
+    border-radius: 10px;
+}
+.banquet-hero-bg-parnet>h3{
+    align-items: center;
+    padding-top: 20px;
+}
+.banquet-left{
+    width:100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px;
+}
+.banquet-left>img{
+    width:100%;
+    height: 18rem;
+}
+.banquet-right{
+    margin-top: 20px;
+    text-align: justify;
+}
+.party-hall-left{
+    width: 100%;
+   height: 21rem;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.party-hall-left>img{
+    width: 100%;
+   height: 21rem;
+   padding: 20px;
+   border-radius: 10px;
+}
+.party-hall-right{
+    margin-top: 25px;
+    text-align: justify;
+}
+.party-venue-desktop{
+    display: none;
+  
+}
+/* party-venue mobile */
+.party-venue-mobile{
+    display: block;
+    margin-top: 25px;
+}
+.party-venue-mob-left{
+    width: 100%;
+   height: 21rem;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.party-venue-mob-left>img{
+    width: 100%;
+   height: 21rem;
+   padding: 20px;
+   border-radius: 10px;
+}
+.party-venue-mob-right{
+    margin-top: 25px;
+    text-align: justify;
+}
 }
 
 

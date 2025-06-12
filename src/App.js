@@ -21,6 +21,7 @@ import HotelMarbleArl from "./componets/HotelMarbleArl";
 import HotelSPB from "./componets/HotelSPB.jsx";
 import CorporatePage from "./componets/CorporatePage.jsx";
 import CorporateQuery from "./componets/CorporateQuery.jsx";
+import Banquet from "./componets/Banquet.jsx";
 // import "./componets/asserts/css/style."
 function App() {
 
@@ -48,7 +49,8 @@ function App() {
         <Route path="/contact" element={<ContactUsPage/>}/>
         <Route path="/gallery" element={<Gallery/>}/>
         <Route path="/corporate" element={<CorporatePage/>}/>
-        <Route path="/corporate-query" element={<CorporateQuery/>}/>
+        <Route path="/banquet" element={<Banquet/>}/>
+        {/* <Route path="/corporate-query" element={<CorporateQuery/>}/> */}
 
 
         <Route path="/confirm/:_id" element={<ConfirmPage/>}/>
