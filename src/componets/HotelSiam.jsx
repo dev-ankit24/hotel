@@ -84,7 +84,7 @@ export default function HotelSiam() {
       <div className="container-fluid page-header mb-1 p-0" style={{ backgroundImage: "url(/img/Home/slider/Room-small-slider1.jpg)" }}>
         <div className="container-fluid page-header-inner py-5">
           <div className="container text-center pb-5">
-            <h1 className="display-3 text-white mb-3 animated slideInDown">Hotel Siam</h1>
+            <h1 className="display-3 text-white mb-3 animated slideInDown">Hotel Siam International</h1>
           </div>
         </div>
       </div>
@@ -121,14 +121,14 @@ export default function HotelSiam() {
 
    <div className="container hotel-main mt-5 mb-5">
         <div className="text-center">
-          <h2 className="mb-3">About Hotel Siam</h2>
+          <h2 className="mb-3">About Hotel Siam International </h2>
           <div className="hotel-siam-line m-auto mb-3"></div>
           <p className="mx-auto" style={{ maxWidth: "1000px" }}>
            
-            Welcome to <strong>Hotel Siam</strong> by <strong>Tomar Hospitality</strong>, where comfort meets elegance. Located in the heart of the city,
+            Welcome to <strong>Hotel Siam International </strong> by <strong>Tomar Hospitality</strong>, where comfort meets elegance. Located in the heart of the city,
             we offer premium rooms, exceptional service, and modern amenities to make your stay truly memorable. Whether
             you're here for business or leisure, our staff ensures a warm and personalized experience. Relax, unwind,
-            and enjoy the hospitality you deserve—only at <strong>Hotel Siam.</strong>
+            and enjoy the hospitality you deserve—only at <strong>Hotel Siam  International.</strong>
 
 
           </p>
@@ -267,7 +267,7 @@ export default function HotelSiam() {
          
 
         <div className="hotel-spb-87">
-          <h2 className="text-center">Request For <span>Hotel Siam </span>Room Booking</h2>
+          <h2 className="text-center">Request For <span>Hotel Siam International </span>Room Booking</h2>
           <div className="hotel-spb-87-line m-auto "></div>
           <p className="text-center">Please leave us your requirements here and we will get back to you. You may also call us at +91-9899145516</p>
         </div>
@@ -305,9 +305,10 @@ export default function HotelSiam() {
                          <label for="exampleInputPassword1" className={`form-label hotel-label `}>Select Hotel*</label>
                          <select className={`form-select ${show && errorMessage.hotel?"border-danger":""}`} onChange={getInput} name="hotel"  aria-label="Default select example">
                            <option selected>Select Hotel  </option>
-                           <option>Hotel Siam</option>
+                           <option>Hotel Siam International</option>
                            <option > Hotel Amrit Villa</option>
-                           <option>Other</option>
+                           <option > Hotel SPB-87 Delhi</option>
+                           <option > Hotel Marble ARL</option>
                          </select>
                        </div>
                        <div className="mb-3 col-md-3 col-sm-4 col-12">

@@ -189,6 +189,164 @@ height: 550px;
 }
 
 
+/* ----------------------------------------------- Corporate page --------------------------------------- */
+/* corporate page  */
+.corporate-membership-pass{
+    display: flex;
+    margin-top: 25px;
+}
+.corporate-membership-heading{
+    margin-top: 5rem;
+}
+.corporate-page-left{
+    height: 24rem;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+}
+.corporate-page-left>img{
+    height: 23.8rem;
+    padding: 15px;
+    width: 100%;
+}
+.corporate-silver-pass{
+    width: 90%;
+    height: 10rem;
+}
+.corporate-silver-pass>img{
+    width: 100%;
+    height: 10rem;
+}
+
+
+.corporate-gold-pass{
+    width: 90%;
+    height: 10rem;
+}
+.corporate-gold-pass>img{
+    width: 100%;
+    height: 10rem;
+}
+
+.corporate-platinum-pass{
+    height: 10rem;
+    width: 90%;
+
+}
+.corporate-platinum-pass>img{
+    width: 100%;
+    height: 10rem;
+}
+.corporate-page-left{
+    height: 24rem;
+    width: 100%;
+}
+.corporate-page-right>p{
+    text-align: justify;
+    margin-top: -15px;
+
+}
+.corporate-membership-btn{
+    width: 100%;
+    margin-top: 45px;
+}
+
+.corporate-membership-btn>a>button{
+    width: 11rem;
+    margin: auto;
+    border-radius: 5px;
+    margin-left: 42%;
+    color:white;
+    background:#FEA116;
+}
+.corporate-membership-btn>a>button:hover{
+    background:#b3710f;
+    color: white;
+}
+.conference-and-event-parent{
+    margin-top: 5rem;
+}
+.conference-service{
+    margin-top: 10px;
+    margin-bottom: -10rem;
+    width: 100%;
+}
+.conference-service>img{
+    width: 100%;
+}
+.conference-service-details{
+    padding: 20px;
+    position: relative;
+   text-align: center;
+   top: -13rem;
+}
+.conference-service-details>h6{
+    font-size: 18px;
+}
+.conference-service-details>p{
+    color: #494646;
+    font-weight: 200;
+}
+.corporate-table-row{
+    height: 50px;
+    align-items: center;
+}
+.corprorate-table{
+    margin-top: 50px;
+}
+.corporate-hero-bg-parnet{
+    height: 5rem;
+    width: 38rem;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.432);
+    border-radius: 10px;
+}
+.corporate-hero-bg-parnet>h3{
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* brand  */
@@ -248,8 +406,44 @@ height: 550px;
 .confirm-page-price-parent{
     margin-top: 0px;
 }
+.conference-service-details{
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    top: -15rem;
+}
+.conference-service{
+     margin-bottom: -12rem;
+      width: 100%;
+      height: 30rem;
+}
+.conference-service>img{
+      width: 100%;
+      height: 18rem;
+}
+.corprorate-table{
+    margin-top: 50px;
+}
 
-
+.corporate-membership-btn>a>button{
+    width: 11rem;
+    /* margin: auto; */
+    border-radius: 5px;
+    margin-left: 25%;
+    color:white;
+    background:#FEA116;
+}
+.corporate-hero-bg-parnet{
+    height: 6rem;
+    width: 100%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.432);
+    border-radius: 10px;
+}
+.corporate-hero-bg-parnet>h3{
+    align-items: center;
+    padding-top: 20px;
+}
 
 }
 
