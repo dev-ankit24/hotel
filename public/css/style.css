@@ -365,7 +365,6 @@ height: 550px;
     height: 21rem;
     width: 100%;
    padding: 20px;
-
 }
 
 /* party - venue mobile */
@@ -377,22 +376,67 @@ height: 550px;
 .seminar-training-left{
     width: 100%;
     margin-top: 40px;
-   height: 18rem;
-   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 18rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .seminar-training-left>img{
     width: 100%;
-   height: 18rem;
-   padding: 20px;
-   border-radius: 10px;
+    height: 18rem;
+    padding: 20px;
+    border-radius: 10px;
 }
 .seminar-training-right{
    margin-top: 50px;
 }
 
+/* banquet hall  */
 
+.banquet-hall-left{
+    width: 100%;
+    margin-top: 40px;
+    height: 21rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.banquet-hall-left>img{
+    width: 100%;
+    height: 21rem;
+    padding: 20px;
+    border-radius: 10px;
+}
+.banquet-hall-right{
+   margin-top: 50px;
+}
 
+/* meeting  Rooms*/
 
+.party-venue-left{
+    width: 100%;
+    padding: 15px;
+}
+
+.party-venue-right{
+    height: 26rem;
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.party-venue-right>img{
+    height: 26rem;
+    width: 100%;
+    padding: 20px;
+}
+.banquet-hall-menu-child{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.banquet-hall-menu-sub-child{
+    padding: 25px;
+}
+.banquet-hall-menu-sub-child-btn{
+    margin-left: 44%;
+}
+.banquet-hall-menu>h5{
+    margin-top: 65px;
+    margin-bottom: 20px;
+}
 
 
 
@@ -585,6 +629,20 @@ height: 550px;
 }
 .party-venue-mob-right{
     margin-top: 25px;
+}
+.party-venue-mob-right>p{
+    text-align: justify;
+}
+.sup-menu{
+    display: none;
+}
+.banquet-hall-menu-sub-child-btn{
+    margin-left: 29%;
+}
+.seminar-training-right>p{
+    text-align: justify;
+}
+.banquet-hall-right>p{
     text-align: justify;
 }
 }
