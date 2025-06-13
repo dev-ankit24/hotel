@@ -437,6 +437,13 @@ height: 550px;
     margin-top: 65px;
     margin-bottom: 20px;
 }
+.room-two-card{
+    display: flex;
+}
+.room-two-card-child{
+     padding-right: 15px;
+}
+
 
 
 
@@ -645,6 +652,13 @@ height: 550px;
 .banquet-hall-right>p{
     text-align: justify;
 }
+.room-two-card{
+    display: block;
+}
+.room-two-card-child{
+     padding-right: 0px;
+}
+
 }
 
 

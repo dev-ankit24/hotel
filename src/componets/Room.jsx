@@ -79,13 +79,14 @@ export default function Room() {
 
           </div>
 
-             <div className="row ">
-             {
+             <div className="row  " >
+              <div className="col-md-8 room-two-card m-auto">
+                 {
               data?.slice("3","5").map((item,index)=>{
                 return(
                   <>
-                  <div className="col-lg-4 mt-4  m-auto col-md-6 wow fadeInUp"  key={index} data-wow-delay="0.1s">
-              <div className="room-item shadow rounded overflow-hidden " >
+                  <div className="col-lg-6 mt-4  room-two-card-child m-auto   col-md-6  wow fadeInUp"  key={index} data-wow-delay="0.1s">
+              <div className="room-item shadow rounded   overflow-hidden " >
                 <div className="position-relative" >
                   <img className="img-fluid" src={item.img[0]} height={"110px"} width={"100%"} alt="" />
                   <small className="position-absolute start-0 top-100 translate-middle-y bg-success text-white rounded py-1 px-3 ms-4">&#8377;{item.price}/night</small>
@@ -119,6 +120,7 @@ export default function Room() {
               })
              }
 
+              </div>
 
             
           
