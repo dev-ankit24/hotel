@@ -7,6 +7,17 @@
     --dark: #000000;
     
 }
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    body, p, span, a, strong, li {
+      font-family: 'Source Sans 3', sans-serif;
+    }
+    
     #header-carousel .carousel-item {
         position: relative;
         height: 450px;
@@ -33,6 +44,7 @@
 .hotel-spb-87>h2{
     font-weight: 600;
     margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
 }
 .hotel-spb-87>h2>span{
     color: #FEA116;
@@ -444,7 +456,9 @@ height: 550px;
      padding-right: 15px;
 }
 
-
+.conference-and-evnet-slider-mobile{
+    display: none;
+}
 
 
 
@@ -657,6 +671,11 @@ height: 550px;
 }
 .room-two-card-child{
      padding-right: 0px;
+}
+.conference-and-evnet-slider-mobile{
+    display: block;
+}.conference-and-evnet-slider-desktop{
+    display: none;
 }
 
 }

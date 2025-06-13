@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { PiLessThanBold } from "react-icons/pi";
+import { FaGreaterThan } from "react-icons/fa6";
+
 // import ms1 from "/img/"
 export default function CorporatePage() {
   return (
@@ -31,7 +34,7 @@ export default function CorporatePage() {
                             </div>
                        </div>  
                        <div className="col-md-6">
-                           <div className="corporate-page-right">
+                           <div className="corporate-page-right mt-2">
                             <h1>Corporate Event Organiser Delhi Event Management Company</h1>
                                 <p>Tomar Hospitality deals corporate event management and event organisation in Delhi. In Delhi, all type of business meeting hall requirement, business meeting events, company conference program & corporate events are organised by us. Our Hotel S.P.B 87 is just close to metro station karol bagh in New Delhi. All types of company business events are planed by our company in hotel conference hall. A newly designed conference hall is available in karol bagh for booking. Our location is perfect according to guest who come by metro, cab, bus or private vehicle. We have car parking in front of our hotel .</p>
                            </div>
@@ -73,7 +76,8 @@ export default function CorporatePage() {
                          <p>We offer a newly designed conference hall in Karol Bagh, equipped with modern amenities to accommodate all types of business events, including:</p>
 
                      </div>
-                     <div className="row">
+                     <div className="row conference-and-evnet-slider-desktop ">
+
                        
                         <div className="col-md-3">
                          <div className="conference-service">
@@ -112,9 +116,61 @@ export default function CorporatePage() {
                              </div> 
                              </div>
                        </div>
-                      
 
                       </div>
+
+
+                      <div className="conference-and-evnet-slider-mobile">
+                        <div id="carouselExample" class="carousel slide">
+                             <div class="carousel-inner">
+                               <div class="carousel-item active">
+                             <div className="conference-service">
+                            <img src="/img/corpo/service/Corporate.jpg" alt="" /> 
+                             <div className="conference-service-details">
+                                <h6>Corporate Meetings</h6>
+                                <p>Corporate Meetings are formal gatherings organized by businesses or companies to discuss goals, strategies, updates, or performance</p>
+                               </div>
+                              </div>
+                               </div>
+                               <div class="carousel-item">
+                                    <div className="conference-service">
+                                      <img src="/img/corpo/service/Seminars.jpg" alt="" />
+                                       <div className="conference-service-details">
+                                           <h6>Seminars </h6>
+                                           <p>Seminars are usually speaker-led sessions focused on delivering information or insights on a specific topic.</p>
+                                        </div>
+                                       </div>
+                               </div>
+                               <div class="carousel-item">
+                                 <div className="conference-service">
+                                     <img src="/img/corpo/service/Product.jpg" alt="" />   
+                                     <div className="conference-service-details">
+                                          <h6>Product Launches</h6>
+                                          <p>Product Launches are events organized to introduce a new product or service to the market. These events create buzz.</p>
+                                       </div> 
+                                      </div>
+                               </div>
+
+                               <div class="carousel-item">
+                                   <div className="conference-service">
+                                        <img src="/img/corpo/service/Annual.jpg" alt="" />                        
+                                          <div className="conference-service-details">
+                                             <h6>Annual General Meetings </h6>
+                                             <p>Annual General Meetings (AGMs) are yearly gatherings where a company's directors present financial performance, strategic .</p>
+                                          </div> 
+                                          </div>
+                               </div>
+                             </div>
+                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                               <span class="" aria-hidden="true"><PiLessThanBold className='text-dark fs-3' /></span>
+                               <span class="visually-hidden">Previous</span>
+                             </button>
+                             <button class="carousel-control-next " type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                               <span class=" "  aria-hidden="true"><FaGreaterThan  className='text-dark fs-3' /></span>
+                               <span class="visually-hidden">Next</span>
+                             </button>
+                           </div>
+                         </div>
 
                    
                 

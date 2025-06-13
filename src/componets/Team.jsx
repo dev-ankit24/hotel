@@ -28,7 +28,7 @@ export default function Team() {
                                 <i className="bi bi-star-fill text-warning"></i>
                                 <i className="bi bi-star-fill text-warning"></i>
                                 {/* <small>Designation</small> */}
-                                <p><sup><RiDoubleQuotesL className='text-success fs-3' /></sup>We reserved the hall for a modest family gathering. Everything went without a hitch. The food was delicious, and the service was excellent. </p>
+                                <p><sup><RiDoubleQuotesL className='text-success fs-3' /></sup>We reserved the hall for a modest family gathering. Everything went without a hitch. The food was delicious, and the service. </p>
                             </div>
                         </div>
                     </div>
