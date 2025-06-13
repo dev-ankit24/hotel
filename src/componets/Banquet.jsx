@@ -159,7 +159,11 @@ export default function Banquet() {
                           <div className="col-md-6">
                             <div className="party-venue-left">
                               <h2>Tomar Hospitality- Banquet Halls In Delhi</h2>
-                              <p>Tomar Hospitality known for the best delhi event planner and wedding planner delhi. Contact us for the perfect planning of your anniversary party or birthday party in delhi. Here you get the best price rate easily for party hall booking, banquet halls, birthday party hall and marriage hall near karol bagh metro station in hotel SPB 87 karol bagh.</p>
+                              <p>Tomar Hospitality is known as the best event planner in Delhi and the top wedding planner in Delhi. We offer expert planning and premium hospitality services for all kinds of celebrations, whether it’s an anniversary party, birthday party, or grand wedding.
+
+ Contact us for hassle-free booking of banquet halls, party halls, birthday party halls, and marriage halls at Hotel SPB 87, Karol Bagh. We provide complete decoration, catering, and event service packages at the most affordable rates.
+
+Whether you're looking for a luxury hall or a small gathering space, we ensure a perfect event setup in Delhi with our professional team.</p>
                              <CiPhone className='fs-5 me-2'/>      <a className='text-dark' href="tel:+91 9899145516">+91 9899145516</a> <br />
                               <MdOutlineMailOutline className='fs-5 me-2' />   <a className='text-dark' href="mailto:tomarhospitality@gmail.com">tomarhospitality@gmail.com</a></div>
                           </div>

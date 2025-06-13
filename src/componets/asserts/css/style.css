@@ -1,6 +1,8 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FEA116;
+    /* --primary: #FEA116; */
+    --primary:  #b37e48;
+   
     /* --primary: #b99365; */
     --light: #ffffff;
     /* --dark: #0F172B; */
@@ -36,10 +38,10 @@
     margin-bottom: 20px;
 }
 .hotel-spb-87>h2>span{
-    color: #FEA116;
+    color:  #edceaf;
 }
 .hotel-spb-87-line{
-    background: #FEA116;
+    background:  #edceaf;
     width: 64%;
     height: 3px;
 }
