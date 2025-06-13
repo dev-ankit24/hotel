@@ -11,10 +11,10 @@ export default function Slider() {
                             <img className="w-100" src="/img/Home/slider/classic-slider.jpg" alt="Room Image for Tomer Hospitality" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div className="p-3" style={{ maxWidth: "700px" }}>
-                                    <h6 className="section-title text-white text-uppercase mb-3 animated slideInDown">Meeting Room</h6>
-                                    <h1 className="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Meeting Room</h1>
-                                    <Link to="/room" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Book Room</Link>
-                                    {/* <Link to="/contact" href="" className="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</Link> */}
+                                    <h6 className="section-title text-white text-uppercase mb-3 ">Meeting Room</h6>
+                                    <h1 className=" text-white mb-4 ">Discover A Brand Luxurious Meeting Room</h1>
+                                    <Link to="/room" className="btn btn-primary py-md-3 px-md-5 me-3 slideInLeft">Book Room</Link>
+                                    {/* <Link to="/contact" href="" className="btn btn-light py-md-3 px-md-5 slideInRight">Book A Room</Link> */}
                                 </div>
                             </div>
                         </div>
@@ -22,11 +22,11 @@ export default function Slider() {
                             <img className="w-100" src="/img/Home/slider/deluxe-slider.jpg" alt="Room Image for Tomer Hospitality" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div className="p-3" style={{ maxWidth: "700px" }}>
-                                    <h6 className="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
-                                    <h1 className="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Hotel</h1>
-                                    <Link to="/room" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Book Room</Link>
-                                    {/* <a href="" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
-                                <a href="" className="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a> */}
+                                    <h6 className="section-title text-white text-uppercase mb-3 ">Luxury Living</h6>
+                                    <h1 className=" text-white mb-4 ">Discover A Brand Luxurious Hotel</h1>
+                                    <Link to="/room" className="btn btn-primary py-md-3 px-md-5 me-3 slideInLeft">Book Room</Link>
+                                    {/* <a href="" className="btn btn-primary py-md-3 px-md-5 me-3 slideInLeft">Our Rooms</a>
+                                <a href="" className="btn btn-light py-md-3 px-md-5 slideInRight">Book A Room</a> */}
                                 </div>
                             </div>
                         </div>
@@ -34,11 +34,11 @@ export default function Slider() {
                             <img className="w-100" src="/img/Home/slider/super-slider.jpg" alt="Room Image for Tomer Hospitality" />
                             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div className="p-3" style={{ maxWidth: "700px" }}>
-                                    <h6 className="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
-                                    <h1 className="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Hotel</h1>
-                                    <Link to="/room" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Book Room</Link>
-                                    {/* <a href="" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
-                                <a href="" className="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a> */}
+                                    <h6 className="section-title text-white text-uppercase mb-3 ">Luxury Living</h6>
+                                    <h1 className=" text-white mb-4 ">Discover A Brand Luxurious Hotel</h1>
+                                    <Link to="/room" className="btn btn-primary py-md-3 px-md-5 me-3 slideInLeft">Book Room</Link>
+                                    {/* <a href="" className="btn btn-primary py-md-3 px-md-5 me-3 slideInLeft">Our Rooms</a>
+                                <a href="" className="btn btn-light py-md-3 px-md-5 slideInRight">Book A Room</a> */}
                                 </div>
                             </div>
                         </div>

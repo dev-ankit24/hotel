@@ -79,10 +79,10 @@ export default function HotelAmritVilla() {
   
   return (
     <>
-     <div className="container-fluid page-header mb-5 p-0" style={{backgroundImage: "url(/img/Home/slider/Room-small-slider2.jpg)"}}>
-            <div className="container-fluid page-header-inner py-5">
+     <div className="container-fluid page-header mb-1 p-0" style={{backgroundImage: "url(/img/Home/slider/Room-small-slider2.jpg)"}}>
+            <div className="container-fluid  py-5">
                 <div className="container text-center pb-5">
-                    <h1 className="display-3 text-white mb-3 animated slideInDown">Hotel Amrit villa </h1>
+                    <h1 className=" text-white mb-3 animated slideInDown">Hotel Amrit villa </h1>
                     <nav aria-label="breadcrumb">
                        
                     </nav>
@@ -231,7 +231,7 @@ export default function HotelAmritVilla() {
           <p className="text-center">Please leave us your requirements here and we will get back to you. You may also call us at +91-9899145516</p>
         </div>
 
-        <div className="col-md-12  ">
+        <div className="col-md-12 ">
                       <div className="hotel-spb-form">
                             <h3 className="text-center">Query Form </h3>
                            <form onSubmit={postData}>

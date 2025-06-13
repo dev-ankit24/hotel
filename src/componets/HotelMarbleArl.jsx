@@ -81,10 +81,10 @@ export default function HotelMarbleArl() {
   return (
     <>
       {/* Header Section */}
-      <div className="container-fluid page-header mb-1 p-0" style={{ backgroundImage: "url(/img/Home/slider/Room-small-slider1.jpg)" }}>
-        <div className="container-fluid page-header-inner py-5">
+      <div className="container-fluid page-header mb-1 p-0" style={{ backgroundImage: "url(/img/room/marbel/6.jpg)" }}>
+        <div className="container-fluid  py-5">
           <div className="container text-center pb-5">
-            <h1 className="display-3 text-white mb-3 animated slideInDown">Hotel Marble ARL</h1>
+            <h1 className=" text-white mb-3 animated slideInDown">Hotel Marble ARL</h1>
           </div>
         </div>
       </div>
@@ -92,16 +92,16 @@ export default function HotelMarbleArl() {
     <div id="carouselHotel87" className="carousel slide">
   <div className="carousel-inner hotel-slider " >
     <div className="carousel-item active">
-      <img src="/img/hotel-87/hotel-87.jpg" className="d-block w-100" alt="slider Hotel  "/>
+      <img src="/img/room/marbel/1.jpg" style={{objectFit:"contain"}} className="d-block w-100" alt="slider Hotel  "/>
     </div>
     <div className="carousel-item">
-      <img src="/img/hotel-87/hotel-871.jpg" className="d-block w-100" alt="..."/>
+      <img src="/img/room/marbel/3.jpg" style={{objectFit:"contain"}} className="d-block w-100" alt="2"/>
     </div>
     <div className="carousel-item">
-      <img src="/img/room/all-room/room4.webp" className="d-block w-100" alt="..."/>
+      <img src="/img/room/marbel/2.jpg" style={{objectFit:"contain"}} className="d-block w-100" alt="3."/>
     </div>
     <div className="carousel-item">
-      <img src="/img/room/all-room/room8.webp" className="d-block w-100" alt="..."/>
+      <img src="/img/room/marbel/4.jpg" style={{objectFit:"contain"}} className="d-block w-100" alt="4"/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselHotel87" data-bs-slide="prev">
@@ -213,16 +213,16 @@ export default function HotelMarbleArl() {
               })
              }
 
-
           </div>
 
-          <div className="row ">
-             {
+            <div className="row  " >
+              <div className="col-md-8 room-two-card m-auto">
+                 {
               roomData?.slice("3","5").map((item,index)=>{
                 return(
                   <>
-                  <div className="col-lg-4 mt-4  m-auto col-md-6 wow fadeInUp"  key={index} data-wow-delay="0.1s">
-              <div className="room-item shadow rounded overflow-hidden " >
+                  <div className="col-lg-6 mt-4  room-two-card-child m-auto   col-md-6  wow fadeInUp"  key={index} data-wow-delay="0.1s">
+              <div className="room-item shadow rounded   overflow-hidden " >
                 <div className="position-relative" >
                   <img className="img-fluid" src={item.img[0]} height={"110px"} width={"100%"} alt="" />
                   <small className="position-absolute start-0 top-100 translate-middle-y bg-success text-white rounded py-1 px-3 ms-4">&#8377;{item.price}/night</small>
@@ -256,6 +256,7 @@ export default function HotelMarbleArl() {
               })
              }
 
+              </div>
 
             
           
