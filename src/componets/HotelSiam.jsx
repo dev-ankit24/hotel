@@ -59,7 +59,7 @@ export default function HotelSiam() {
         
       }
       else{
-        let res = await fetch("http://localhost:5000/api/bookroom",{
+        let res = await fetch("https://tomerhospitality-backend.onrender.com/api/bookroom",{
           method:"POST",
           headers:{
             "Content-type":"application/json"

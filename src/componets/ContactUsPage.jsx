@@ -47,7 +47,7 @@ let [show, setShow]= useState(false)
         setShow(true)
       }
       else{
-         let res = await fetch("http://localhost:5000/api/contact",{
+         let res = await fetch("https://tomerhospitality-backend.onrender.com/api/contact",{
             method:"POST",
             headers:{
                 "content-type":"application/json"

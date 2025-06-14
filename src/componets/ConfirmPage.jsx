@@ -53,7 +53,7 @@ export default function ConfirmPage() {
         setBookingID(newID);
           const allData = { ...state, bookingID: newID };
         try {
-         let res = await fetch("http://localhost:5000/api/roomquery",{
+         let res = await fetch("https://tomerhospitality-backend.onrender.com/api/roomquery",{
             method:"POST",
             headers:{
                 "Content-type":"application/json"

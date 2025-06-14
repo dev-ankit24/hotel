@@ -19,7 +19,7 @@ export default function Footer() {
                         <Link to= "/"><h1 className="text-white text-uppercase ">
                             <img src="/img/logotomar.png" alt="footer logo image" height={100} width={150}  />
                             </h1></Link>
-                        <p className="text-white mb-0">
+                        <p className="text-white mb-0 " style={{textAlign:"justify"}}>
           Welcome to Tomar Hospitality, one of the best hospitality service providers in the capital city New Delhi. We are popular among our beloved clients for we shower them with happiness through our quality services Corporate Meeting Rooms, Indian Holiday Packages, Local Sightseeing Delhi, Car Rental services and Same Day Tours in Delhi at affordable Prices
           </p>
                     </div>
