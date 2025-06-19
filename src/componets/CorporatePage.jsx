@@ -7,24 +7,24 @@ import { FaGreaterThan } from "react-icons/fa6";
 export default function CorporatePage() {
   return (
      <>
-      <div className="container-fluid page-header mb-5 p-0" style={{backgroundImage: "url(/img/corpo/corpo-hero.jpg)"}}>
+      <div className="container-fluid page-header mb-3 p-0" style={{backgroundImage: "url(/img/corpo/corpo-hero.jpg)"}}>
             <div className="container-fluid  py-5">
                 <div className="container text-center  pb-5">
                      <div className="corporate-hero-bg-parnet">
-                        <h3 className=" fs-3 text-dark mb-3  ">
-                        <span >Corporate </span>Event Organisers in Delhi
-                        </h3>
                      </div>
                      <nav aria-label="breadcrumb">
                         {/* <ol className="breadcrumb justify-content-center text-uppercase">
                             <li className="breadcrumb-item"><a href="#">Home</a></li>
                             <li className="breadcrumb-item"><a href="#">Pages</a></li>
                             <li className="breadcrumb-item text-white active" aria-current="page">About</li>
-                        </ol> */}
+                            </ol> */}
                     </nav>             
                 </div>
             </div>
         </div>
+                            <h3 className=" fs-3  mb-5 text-center " style={{color:"#B37E48"}}>
+                            <span >Corporate </span>Event Organisers in Delhi
+                            </h3>
      <div className="container">
              <div className="container-fluid">
                     <div className="row">
@@ -43,23 +43,25 @@ export default function CorporatePage() {
 
                     <h2 className='text-center corporate-membership-heading'>MEMBERSHIP</h2>
                     <p className='text-center'>Welcome to The Grand Shoba a Delhi of tailored privileges and benefits, designed to enhance and enrich your experience.</p>
-                   <div className="corporate-membership-pass ">
+                   <div className="row">
+                      <div className="corporate-membership-pass ">
                        <div className="col-md-4">
-                        <div className="corporate-silver-pass  m-auto">
-                        <img src="/img/pass/silver.png" height={100} width={100}/>
+                        <div className="corporate-silver-pass mb-2 m-auto">
+                        <img src="/img/pass/silver1.jpg"  />
                         </div>
                        </div>
                     <div className="col-md-4">
-                        <div className="corporate-gold-pass m-auto">
-                        <img src="/img/pass/gold.jpg" height={100} width={100}/>
+                        <div className="corporate-gold-pass mb-2 m-auto">
+                        <img src="/img/pass/silver1.jpg"  />
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="corporate-platinum-pass m-auto ">
-                        <img src="/img/pass/platinum.jpg" height={100} width={100}/>
+                        <img src="/img/pass/platinum1.jpg"  />
                         </div>
                     </div>
                     
+                   </div>
                    </div>
                    <div className="corporate-membership-btn">
                         <Link to="/contact">
@@ -70,7 +72,7 @@ export default function CorporatePage() {
 
                     {/* confrence and events */}
                     <div className="conference-and-event-parent">
-                        <h2 className='text-center'>CONFERENCES AND <span style={{color:"#FEA116"}}>EVENTS</span></h2>
+                        <h2 className='text-center'>CONFERENCES AND <span style={{color:"#b37e48"}}>EVENTS</span></h2>
                         <p className='text-center'>At Tomar Hospitality, we specialize in corporate event management and business conference planning in Delhi. Whether you're organizing a board meeting, corporate seminar, training session, or a large company conference, our expert team ensures seamless execution from start to finish.
                           Our dedicated venue, Hotel S.P.B 87, is conveniently located near the Karol Bagh Metro Station in New Delhi, offering easy access by metro, cab, bus, or private vehicle. We also provide on-site car parking for added convenience.</p>
                          <p>We offer a newly designed conference hall in Karol Bagh, equipped with modern amenities to accommodate all types of business events, including:</p>

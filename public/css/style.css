@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    /* --primary: #FEA116; */
+    /* --primary: #b37e48; */
     --primary:  #b37e48;
 
     /* --primary: #b99365; */
@@ -49,10 +49,10 @@
     font-family: "Playfair Display", serif;
 }
 .hotel-spb-87>h2>span{
-    color: #FEA116;
+    color: #b37e48;
 }
 .hotel-spb-87-line{
-    background: #FEA116;
+    background: #b37e48;
     width: 64%;
     height: 3px;
 }
@@ -208,6 +208,7 @@ height: 550px;
 .corporate-membership-pass{
     display: flex;
     margin-top: 25px;
+    justify-content: space-around;
 }
 .corporate-membership-heading{
     margin-top: 5rem;
@@ -224,31 +225,39 @@ height: 550px;
     width: 100%;
 }
 .corporate-silver-pass{
-    width: 90%;
+    width: 100%;
     height: 10rem;
+    
+    
 }
 .corporate-silver-pass>img{
     width: 100%;
     height: 10rem;
+    object-fit: contain;
 }
 
 
 .corporate-gold-pass{
-    width: 90%;
+    width: 100%;
     height: 10rem;
+    margin-top: 10px;
+   
 }
 .corporate-gold-pass>img{
     width: 100%;
+    object-fit: contain;
     height: 10rem;
+    
 }
 
 .corporate-platinum-pass{
     height: 10rem;
-    width: 90%;
+    width: 100%;
 
 }
 .corporate-platinum-pass>img{
     width: 100%;
+    object-fit: contain;
     height: 10rem;
 }
 .corporate-page-left{
@@ -271,7 +280,7 @@ height: 550px;
     border-radius: 5px;
     margin-left: 42%;
     color:white;
-    background:#FEA116;
+    background:#b37e48;
 }
 .corporate-membership-btn>a>button:hover{
     background:#b3710f;
@@ -312,7 +321,7 @@ height: 550px;
     height: 5rem;
     width: 38rem;
     margin: auto;
-    background: rgba(255, 255, 255, 0.432);
+    /* background: rgba(255, 255, 255, 0.432); */
     border-radius: 10px;
 }
 .corporate-hero-bg-parnet>h3{
@@ -323,7 +332,8 @@ height: 550px;
     height: 6rem;
     width: 38rem;
     margin: auto;
-    background: rgba(255, 255, 255, 0.432);
+    /* background: rgba(255, 255, 255, 0.432); */
+    /* background: #b37d485d; */
     border-radius: 10px;
 }
 .banquet-hero-bg-parnet>h3{
@@ -576,9 +586,9 @@ height: 550px;
     width: 11rem;
     /* margin: auto; */
     border-radius: 5px;
-    margin-left: 25%;
+    margin-left: 23%;
     color:white;
-    background:#FEA116;
+    background:#b37e48;
 }
 .corporate-hero-bg-parnet{
     height: 6rem;
@@ -679,6 +689,33 @@ height: 550px;
 }.conference-and-evnet-slider-desktop{
     display: none;
 }
+.corporate-membership-pass{
+    display: block;
+    margin-top: 25px;
+   
+}
+/* .corporate-gold-pass{
+    width: 100%;
+    height: 11rem;
+    
+}
+.corporate-gold-pass>img{
+    margin-bottom: -20px;
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+}
+.corporate-silver-pass{
+    width: 100%;
+    height: 11rem;
+    
+}
+.corporate-silver-pass>img{
+    margin-bottom: -20px;
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+} */
 
 }
 

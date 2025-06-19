@@ -42,17 +42,20 @@ let [show, setShow]= useState(false)
 
  const postData =(async(e)=>{
     e.preventDefault()
-      let error = Object.values(errorMessage).find((x)=>x.length>0)
-      if(error){
+    
+    let error = Object.values(errorMessage).find((x)=>x.length>0)
+    if(error){
         setShow(true)
-      }
-      else{
+        console.log(error);
+        
+    }
+    else{
          let res = await fetch("https://tomerhospitality-backend.onrender.com/api/contact",{
             method:"POST",
             headers:{
-                "content-type":"application/json"
+                "Content-type":"application/json"
             },
-            body: JSON.stringify({...data})
+            body: JSON.stringify(data)
          })
          res = await res.json()
          if(res.result==="Done"){
@@ -69,20 +72,20 @@ let [show, setShow]= useState(false)
   return (
     <>
     {/* <!-- Page Header Start --> */}
-        <div className="container-fluid page-header mb-5 p-0" style={{backgroundImage: "url(img/ban3.png)"}}>
+        <div className="container-fluid page-header mb-1 p-0" style={{backgroundImage: "url(img/ban3.png)"}}>
             <div className="container-fluid  py-5">
                 <div className="container text-center pb-5">
-                    <h1 className="text-white mb-3 animated slideInDown">Contact</h1>
                     <nav aria-label="breadcrumb">
                         {/* <ol className="breadcrumb justify-content-center text-uppercase">
                             <li className="breadcrumb-item"><a href="#">Home</a></li>
                             <li className="breadcrumb-item"><a href="#">Pages</a></li>
                             <li className="breadcrumb-item text-white active" aria-current="page">Contact</li>
-                        </ol> */}
+                            </ol> */}
                     </nav>
                 </div>
             </div>
         </div>
+                            <h1 className=" mb-0 animated slideInDown text-center" style={{color:"#B37E48", }}>Contact</h1>
         {/* <!-- Page Header End --> */}
         {/* <Booking/> */}
         {/* <!-- Contact Start --> */}

@@ -31,24 +31,24 @@ export default function Banquet() {
   };
   return (
    <>
-    <div className="container-fluid page-header mb-5 p-0" style={{backgroundImage: "url(/img/banquet/banquet.jpg)"}}>
+    <div className="container-fluid page-header mb-3 p-0" style={{backgroundImage: "url(/img/banquet/banquet.jpg)"}}>
             <div className="container-fluid  py-5">
                 <div className="container text-center  pb-5">
                      <div className="banquet-hero-bg-parnet">
-                        <h3 className=" fs-3 text-dark mb-3  ">
-                          Banquet Hall-Delhi-Wedding Hall Karol Bagh
-                        </h3>
                      </div>
                      <nav aria-label="breadcrumb">
                         {/* <ol className="breadcrumb justify-content-center text-uppercase">
                             <li className="breadcrumb-item"><a href="#">Home</a></li>
                             <li className="breadcrumb-item"><a href="#">Pages</a></li>
                             <li className="breadcrumb-item text-white active" aria-current="page">About</li>
-                        </ol> */}
+                            </ol> */}
                     </nav>             
                 </div>
             </div>
     </div>
+                            <h3 className=" fs-3 text-center mb-5" style={{color:"#B37E48"}}>
+                              Banquet Hall-Delhi-Wedding Hall Karol Bagh
+                            </h3>
     <div className="container">
               <div className="container-fluid">
                  <div className="row">

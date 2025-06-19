@@ -79,16 +79,16 @@ export default function HotelAmritVilla() {
   
   return (
     <>
-     <div className="container-fluid page-header mb-1 p-0" style={{backgroundImage: "url(/img/Home/slider/Room-small-slider2.jpg)"}}>
+     {/* <div className="container-fluid page-header mb-1 p-0" style={{backgroundImage: "url(/img/Home/slider/Room-small-slider2.jpg)"}}>
             <div className="container-fluid  py-5">
                 <div className="container text-center pb-5">
-                    <h1 className=" text-white mb-3 animated slideInDown">Hotel Amrit villa </h1>
+                    <h1 className=" mb-3 animated slideInDown" style={{color:"#B37E48"}}>Hotel Amrit villa </h1>
                     <nav aria-label="breadcrumb">
                        
                     </nav>
                 </div>
             </div>
-        </div>
+        </div> */}
         <div id="carouselExample" className="carousel slide">
   <div className="carousel-inner hotel-slider" >
     <div className="carousel-item active">
@@ -140,17 +140,17 @@ export default function HotelAmritVilla() {
         <h3 className="text-center ">Why Choose Us</h3>
         <div className="row text-center">
           <div className="col-md-4 mb-3">
-            <Ri24HoursFill className=" fs-3 mb-2" style={{color:"#FEA116"}} />
+            <Ri24HoursFill className=" fs-3 mb-2" style={{color:"#b37e48"}} />
             <h5>24/7 Service</h5>
             <p>Round-the-clock assistance for all your needs.</p>
           </div>
           <div className="col-md-4 mb-3">
-            <IoBedOutline className=" fs-3 mb-2" style={{color:"#FEA116"}} />
+            <IoBedOutline className=" fs-3 mb-2" style={{color:"#b37e48"}} />
             <h5>Luxury Rooms</h5>
             <p>Spacious, stylish, and fully equipped rooms.</p>
           </div>
           <div className="col-md-4 mb-3">
-            <FaWifi className=" fs-3 mb-2" style={{color:"#FEA116"}}  />
+            <FaWifi className=" fs-3 mb-2" style={{color:"#b37e48"}}  />
             <h5>Free Wi-Fi</h5>
             <p>Stay connected with complimentary high-speed internet.</p>
           </div>

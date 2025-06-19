@@ -1,7 +1,7 @@
 {
   "name": "hoteltwo",
   "version": "0.1.0",
-  "proxy ": "https://tomerhospitality-backend.onrender.com/",
+  "proxy ": "https://tomerhospitality-backend.onrender.com",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { MdOutlineEmail, MdOutlinePhone } from 'react-icons/md';
 import { Link, NavLink, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
@@ -60,11 +61,11 @@ export default function Navbar() {
                         <div className="row gx-0 bg-white d-none d-lg-flex">
                             <div className="col-lg-7 px-5 text-start">
                                 <div className="h-100 d-inline-flex align-items-center py-2 me-4">
-                                    <i className="fa fa-envelope text-dark me-2"></i>
+                                    <MdOutlineEmail className='me-2 text-primary fs-5' />
                                     <p className="mb-0"><a href="mailto:tomarhospitality@gmail.com">tomarhospitality@gmail.com</a></p>
                                 </div>
                                 <div className="h-100 d-inline-flex align-items-center py-2">
-                                    <i className="fa fa-phone-alt text-dark me-2"></i>
+                                    <MdOutlinePhone className='me-2 text-primary fs-5'  />
                                     <p className="mb-0"><a href="tel:+919899145516">+91 9899145516</a></p>
                                 </div>
                             </div>
