@@ -36,7 +36,7 @@ export default function CorporatePage() {
                        <div className="col-md-6">
                            <div className="corporate-page-right mt-2">
                             <h1>Corporate Event Organiser Delhi Event Management Company</h1>
-                                <p>Tomar Hospitality deals corporate event management and event organisation in Delhi. In Delhi, all type of business meeting hall requirement, business meeting events, company conference program & corporate events are organised by us. Our Hotel S.P.B 87 is just close to metro station karol bagh in New Delhi. All types of company business events are planed by our company in hotel conference hall. A newly designed conference hall is available in karol bagh for booking. Our location is perfect according to guest who come by metro, cab, bus or private vehicle. We have car parking in front of our hotel .</p>
+                                <p className='mt-1'>Tomar Hospitality deals corporate event management and event organisation in Delhi. In Delhi, all type of business meeting hall requirement, business meeting events, company conference program & corporate events are organised by us. Our Hotel S.P.B 87 is just close to metro station karol bagh in New Delhi. All types of company business events are planed by our company in hotel conference hall. A newly designed conference hall is available in karol bagh for booking. Our location is perfect according to guest who come by metro, cab, bus or private vehicle. We have car parking in front of our hotel .</p>
                            </div>
                        </div> 
                     </div> 
@@ -73,7 +73,7 @@ export default function CorporatePage() {
                     {/* confrence and events */}
                     <div className="conference-and-event-parent">
                         <h2 className='text-center'>CONFERENCES AND <span style={{color:"#b37e48"}}>EVENTS</span></h2>
-                        <p className='text-center'>At Tomar Hospitality, we specialize in corporate event management and business conference planning in Delhi. Whether you're organizing a board meeting, corporate seminar, training session, or a large company conference, our expert team ensures seamless execution from start to finish.
+                        <p className='text-center '>At Tomar Hospitality, we specialize in corporate event management and business conference planning in Delhi. Whether you're organizing a board meeting, corporate seminar, training session, or a large company conference, our expert team ensures seamless execution from start to finish.
                           Our dedicated venue, Hotel S.P.B 87, is conveniently located near the Karol Bagh Metro Station in New Delhi, offering easy access by metro, cab, bus, or private vehicle. We also provide on-site car parking for added convenience.</p>
                          <p>We offer a newly designed conference hall in Karol Bagh, equipped with modern amenities to accommodate all types of business events, including:</p>
 
